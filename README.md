@@ -1,5 +1,6 @@
 
 # JSON to CEF converter
+convert your JSON events to CEF format
 * Author : Tamir Suliman
 * Date : 02-09-2023
 
