@@ -16,6 +16,46 @@ for log in data:
          print(key) 
 
 ```
+
+
+
+
+|cisco.ios.access_list|
+|cisco.ios.facility|
+|destination.address|
+|destination.ip|
+
+|destination.port
+|event.category
+|event.code
+|event.dataset
+|event.kind
+|event.module
+|event.original
+|event.outcome
+|event.sequence
+|event.severity
+|event.timezone
+|event.type
+|fileset.name
+|input.type
+|log.level
+|log.offset
+|log.source.address
+|message
+|network.community_id
+|network.packets
+|network.transport
+|network.type
+|related.ip
+|service.type
+|source.address
+|source.ip
+|source.packets
+|source.port
+|tags
+
+
 ### STEP 2 
 
 Idenity what/which CEF fields that you will need to map  to the keys - map the cef field
