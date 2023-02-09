@@ -125,5 +125,6 @@ with open("cisco-cef_logs.log", "w") as f:
 
 
 
-
+## References
+[1] https://help.deepsecurity.trendmicro.com/10_2/on-premise/Events-Alerts/syslog-parsing.html
 
