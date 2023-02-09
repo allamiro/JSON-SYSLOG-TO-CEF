@@ -26,6 +26,7 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 # SYSLOG to CEF converter
 Syslog,  is an open standard for logging and reporting events from computer systems, network devices, and other IT assets. Syslog is supported by a wide range of network devices and operating systems, making it a widely used logging format. Syslog messages contain a priority value, which indicates the severity of the event, and a message body, which provides detailed information about the event.
 
+
 [LINUX END POINTS ]
 [CISCO DEVICES]. === >TCP/syslog-file ===> SYSLOG-CEF.py ===> file-logs.cef 
 [SYSLOG Servers]
