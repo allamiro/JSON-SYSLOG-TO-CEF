@@ -24,3 +24,8 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 [LINUX END POINTS ]
 [CISCO DEVICES]. === >TCP/syslog-file ===> SYSLOG-CEF.py ===> file-logs.cef 
 [SYSLOG Servers]
+
+
+### CISCO Logs 
+
+
