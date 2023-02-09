@@ -32,3 +32,5 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 ### CISCO Logs 
 
 
+# References 
+Log sampels are used from https://github.com/elastic/beats/tree/main/x-pack/filebeat/module
