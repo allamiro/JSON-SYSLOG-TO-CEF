@@ -20,3 +20,7 @@ The use case scenario would be :
 
 # SYSLOG to CEF converter
 
+
+[LINUX END POINTS ]
+[CISCO DEVICES]. === >TCP/syslog-file ===> SYSLOG-CEF.py ===> file-logs.cef 
+[SYSLOG Servers]
