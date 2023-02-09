@@ -17,3 +17,21 @@ for log in data:
 
 ```
 ### STEP 2 
+
+Idenity what CEF field will map  to the key - map the cef field
+
+| CEF Field| Key Extracted from the Json file   |
+|----------|------------------------------------|
+|          |                                    |
+|          |                                    |
+|          |                                    |
+
+
+
+
+
+
+
+
+
+
