@@ -125,6 +125,23 @@ with open("cisco-cef_logs.log", "w") as f:
 
 
 
+## STEP 4
+Update the logstash pipeline to ouput the file in json format 
+* I guess I could also use output tcp but the socket wasnt workin on mac - will test it 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## References
 [1] https://help.deepsecurity.trendmicro.com/10_2/on-premise/Events-Alerts/syslog-parsing.html
 [2] https://github.com/elastic/beats/tree/main/x-pack/filebeat
