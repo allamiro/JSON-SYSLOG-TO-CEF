@@ -1,7 +1,7 @@
 
 # JSON to CEF converter
-## Author : Tamir Suliman
-## Date : 02-09-2023
+* Author : Tamir Suliman
+* Date : 02-09-2023
 
 Converting from JSON to CEF involves mapping the fields from the JSON data to the fields in the Common Event Format (CEF). CEF is a standardized log format that enables log management systems to process and store logs from various security and network devices.
 
@@ -17,3 +17,6 @@ The use case scenario would be :
 [END POINTS ]
 [CISCO DEVICES]. === > [LOGSTASH]. ==> TCP/json-file ===> JSON-CEF.py ===> file-logs.cef 
 [SYSLOG]
+
+# SYSLOG to CEF converter
+
