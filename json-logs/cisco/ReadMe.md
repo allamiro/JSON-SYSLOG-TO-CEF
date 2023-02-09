@@ -22,16 +22,13 @@ Idenity what CEF field will map  to the key - map the cef field
 
 | CEF Field| Key Extracted from the Json file   |
 |----------|------------------------------------|
+|  act        |                                    |
+|    src      |                                    |
 |          |                                    |
-|          |                                    |
-|          |                                    |
 
 
 
 
-|Field Name	|Field Description	|Data Type|	Required|	Example|
-|-----|------|-----|---|---|---|
-|act	|Action performed|	String	|No	|Login|
 
 
 
