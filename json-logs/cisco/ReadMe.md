@@ -75,6 +75,12 @@ Create your python parser
 
 
 ```
+#!/usr/bin/python3
+# Author Tamir Suliman
+# Email tamir.b.suliman.ctr@army.mil
+# Date : 02-09-2023
+
+# Import libraries 
 import json
 import re 
 import os 
@@ -105,6 +111,7 @@ with open("cisco-cef_logs.log", "w") as f:
         cef_log += "dpt=" + str(log.get("destination.port", "")) + " "
         cef_log += "proto=" + log.get("network.transport", "") + " "
         cef_log += "cat=" + ','.join(log.get("event.category", [])) + " "
+        cef_log += "dvc=" + ','.join(log.get("log.source.address", [])) + " "
         cef_log += "msg=" + log.get("event.original", "") + " "
         cef_log += "outcome=" + log.get("event.outcome", "") + " "
         cef_log += "cs1=" + log.get("event.code", "") + " "
@@ -113,7 +120,6 @@ with open("cisco-cef_logs.log", "w") as f:
         cef_log += "severity=" + str(log.get("event.severity", "")) + " "
         print(cef_log)
         f.write(cef_log + "\n")
-
 
 ```
 
