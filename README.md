@@ -33,4 +33,4 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 
 
 # References 
-Log sampels are used from https://github.com/elastic/beats/tree/main/x-pack/filebeat/module
+Log sampels  used from https://github.com/elastic/beats/tree/main/x-pack/filebeat/module
