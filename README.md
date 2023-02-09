@@ -41,6 +41,6 @@ Syslog,  is an open standard for logging and reporting events from computer syst
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![python][python.com]][Python-url]
+
 # References 
 Log sampels  used from https://github.com/elastic/beats/tree/main/x-pack/filebeat/module
