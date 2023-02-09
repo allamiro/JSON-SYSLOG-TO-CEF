@@ -77,7 +77,7 @@ Create your python parser
 ```
 #!/usr/bin/python3
 # Author Tamir Suliman
-# Email tamir.b.suliman.ctr@army.mil
+# Email allamiro@gmail.com
 # Date : 02-09-2023
 
 # Import libraries 
