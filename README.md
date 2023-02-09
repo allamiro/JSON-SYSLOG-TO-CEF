@@ -18,6 +18,9 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 [CISCO DEVICES]. === > [LOGSTASH]. ==> TCP/json-file ===> JSON-CEF.py ===> file-logs.cef 
 [SYSLOG]
 
+
+### CISCO Logs
+
 # SYSLOG to CEF converter
 
 
