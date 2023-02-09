@@ -14,11 +14,13 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 
 * The use case scenario would be :
 
+========================================================================================
+
 [END POINTS ]
 [CISCO DEVICES]. === > [LOGSTASH]. ==> TCP/json-file ===> JSON-CEF.py ===> file-logs.cef 
 [SYSLOG]
 
-
+========================================================================================
 ### CISCO Logs
 
 # SYSLOG to CEF converter
