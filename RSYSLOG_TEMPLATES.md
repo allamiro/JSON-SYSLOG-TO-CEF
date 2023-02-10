@@ -7,6 +7,8 @@ $template CEF,"CEF:0|%{syslog_app}|%{syslog_app}|%{syslog_pid}|%{syslog_msgid}|%
 ```
 
 
+This template will parse the syslog data into the following CEF format:
+
 
 
 
@@ -15,3 +17,12 @@ $template CEF,"CEF:0|%{syslog_app}|%{syslog_app}|%{syslog_pid}|%{syslog_msgid}|%
 CEF:0|<Syslog App Name>|<Syslog App Name>|<Syslog PID>|<Syslog Msg ID>|<Syslog Message>|<Syslog Priority>|<Syslog Facility>
 
 ```
+
+This template will parse the syslog data into the following CEF format:
+
+
+
+
+$template CEF,"CEF:0|%{syslog_app}|%{syslog_hostname}|%{syslog_pid}|%{syslog_message}|%{syslog_priority}|%{syslog_facility}\"
+This template will parse the syslog data into the following CEF format:
+
