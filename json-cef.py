@@ -9,11 +9,9 @@ import re
 import os 
 import socket 
 
-
 # CEF_template = "CEF:0|{cisco.ios.facility}|{event.module}|{event.code}|{message}|{event.severity}|"
 # Define the CEF header template
 cef_header = "CEF:0|Cisco|IOS|1.0|"
-
 cef_data = []
 
 # Read the json files in the directory 
