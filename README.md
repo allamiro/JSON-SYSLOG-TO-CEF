@@ -26,9 +26,7 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 Syslog,  is an open standard for logging and reporting events from computer systems, network devices, and other IT assets. Syslog is supported by a wide range of network devices and operating systems, making it a widely used logging format. Syslog messages contain a priority value, which indicates the severity of the event, and a message body, which provides detailed information about the event.
 
 
-[LINUX END POINTS ]
-[CISCO DEVICES]. === >TCP/syslog-file ===> SYSLOG-CEF.py ===> file-logs.cef 
-[SYSLOG Servers]
+![SYSLOG 2 CEF ](https://github.com/allamiro/JSON-SYSLOG-TO-CEF/blob/main/images/Screenshot%202023-02-10%20at%201.41.31%20AM.png)
 
 
 ### CISCO Logs 
