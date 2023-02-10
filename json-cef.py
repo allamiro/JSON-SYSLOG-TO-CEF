@@ -41,3 +41,11 @@ with open("cisco-cef_logs.log", "w") as f:
         cef_log += "severity=" + str(log.get("event.severity", "")) + " "
         print(cef_log)
         f.write(cef_log + "\n")
+
+        
+        
+        
+        
+        
+        
+        
