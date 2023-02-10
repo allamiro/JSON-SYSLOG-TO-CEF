@@ -6,3 +6,12 @@ $template CEF,"CEF:0|%{syslog_app}|%{syslog_app}|%{syslog_pid}|%{syslog_msgid}|%
 
 ```
 
+
+
+
+
+```
+
+CEF:0|<Syslog App Name>|<Syslog App Name>|<Syslog PID>|<Syslog Msg ID>|<Syslog Message>|<Syslog Priority>|<Syslog Facility>
+
+```
