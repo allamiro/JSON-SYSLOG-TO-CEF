@@ -45,7 +45,7 @@ with open("cisco-cef_logs.log", "w") as f:
 
         
         
-        
+# cef_data = "CEF:0|source|name|version|signature_id|signature|severity|"        
 cef_header2 = "CEF:0|Microsoft|Microsoft Windows|Microsoft-Windows-Security-Auditing|1.12.0|"
 
 with open('win-log.json', 'r+') as ciscolog:
