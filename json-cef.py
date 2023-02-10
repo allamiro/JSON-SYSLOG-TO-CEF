@@ -46,7 +46,22 @@ with open("cisco-cef_logs.log", "w") as f:
         
         
         
-        
+cef_header2 = "CEF:0|Microsoft|Microsoft Windows|Microsoft-Windows-Security-Auditing|1.12.0|"
+
+with open('win-log.json', 'r+') as ciscolog:
+        jess_dict = json.load(ciscolog)
+        #jess_dict1 = json.dumps(jess_dict, indent=4)
+        jess_dict1 = json.dumps(jess_dict)
+# Passing the JSON file to a Converter Function
+with open("win-cef_logs.log", "w") as f:
+    for log in jess_dict:
+        cef_log = cef_header2 + "start=" + log.get("@timestamp", "") + " "
+        cef_log += "event_id=" + log.get("winlog", {}).get("event_id", "") + " "
+        cef_log += "event_message=" + log.get("message","") + " "
+        cef_log += "action=" + log.get("event", {}).get("action", "") + " "
+        outcome = log.get("event", {}).get("outcome", "") + " "
+        print(cef_log)
+        f.write(cef_log + "\n")
         
         
         
