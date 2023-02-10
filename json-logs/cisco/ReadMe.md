@@ -179,5 +179,6 @@ Run and update the python script
 
 ## References
 [1] https://help.deepsecurity.trendmicro.com/10_2/on-premise/Events-Alerts/syslog-parsing.html
+
 [2] https://github.com/elastic/beats/tree/main/x-pack/filebeat
 
