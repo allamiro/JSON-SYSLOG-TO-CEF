@@ -19,7 +19,7 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 
 ========================================================================================
 
-[JSON CEF ]("./images/json.jpeg")
+[JSON CEF ]("https://github.com/allamiro/JSON-SYSLOG-TO-CEF/blob/main/images/json.jpeg")
 [END POINTS ]
 [CISCO DEVICES]. === > [LOGSTASH]. ==> TCP/json-file ===> JSON-CEF.py ===> file-logs.cef 
 [SYSLOG]
