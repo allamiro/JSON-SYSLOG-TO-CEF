@@ -8,7 +8,10 @@
 import json
 import re 
 import os 
-import socket 
+import socket
+
+
+# Need to add the ability to read from a socket forward to an object after decoding the data
 
 # CEF_template = "CEF:0|{cisco.ios.facility}|{event.module}|{event.code}|{message}|{event.severity}|"
 # Define the CEF header template
