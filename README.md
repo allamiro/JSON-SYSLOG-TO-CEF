@@ -17,7 +17,7 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 
 * The use case scenario would be :
 
-
+![JSON CEF PIPELINE ]("https://github.com/allamiro/JSON-SYSLOG-TO-CEF/blob/main/images/json.jpeg")
 
 
 ### CISCO Logs
