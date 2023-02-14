@@ -1,7 +1,42 @@
 
 ## Converting CISCO IOS JSON LOGS to CEF
+## STEP 1
+Update the logstash pipeline to ouput the file in json format 
+* I guess I could also use output tcp but the socket wasnt workin on mac - will test it 
 
-### STEP 1 
+
+```
+
+input {
+  udp {
+    port => 514
+    type => "syslog"
+  }
+}
+
+filter {
+  grok {
+    match => { "message" => "%{SYSLOGTIMESTAMP:syslog_timestamp} %{SYSLOGHOST:syslog_hostname} %{DATA:syslog_message}" }
+  }
+  date {
+    match => [ "syslog_timestamp", "MMM d HH:mm:ss", "MMM dd HH:mm:ss" ]
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => ["localhost:9200"]
+    manage_template => false
+    index => "syslog-%{+YYYY.MM.dd}"
+  }
+  file {
+    path => "/path/to/output/file.json"
+    codec => "json"
+  }
+}
+
+```
+### STEP 2
 Identify and generate the keys in the logs 
 
 
@@ -55,7 +90,7 @@ for log in data:
 |tags|
 
 
-### STEP 2 
+### STEP 3
 
 Idenity what/which CEF fields that you will need to map  to the keys - map the cef field
 
@@ -69,7 +104,7 @@ Idenity what/which CEF fields that you will need to map  to the keys - map the c
 
 
 
-### STEP 3
+### STEP 4
 
 Create your python parser 
 
@@ -125,42 +160,7 @@ with open("cisco-cef_logs.log", "w") as f:
 
 
 
-## STEP 4
-Update the logstash pipeline to ouput the file in json format 
-* I guess I could also use output tcp but the socket wasnt workin on mac - will test it 
 
-
-```
-
-input {
-  udp {
-    port => 514
-    type => "syslog"
-  }
-}
-
-filter {
-  grok {
-    match => { "message" => "%{SYSLOGTIMESTAMP:syslog_timestamp} %{SYSLOGHOST:syslog_hostname} %{DATA:syslog_message}" }
-  }
-  date {
-    match => [ "syslog_timestamp", "MMM d HH:mm:ss", "MMM dd HH:mm:ss" ]
-  }
-}
-
-output {
-  elasticsearch {
-    hosts => ["localhost:9200"]
-    manage_template => false
-    index => "syslog-%{+YYYY.MM.dd}"
-  }
-  file {
-    path => "/path/to/output/file.json"
-    codec => "json"
-  }
-}
-
-```
 
 
 
