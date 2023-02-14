@@ -25,7 +25,7 @@ with open('data2.json', 'r+') as ciscolog:
         jess_dict1 = json.dumps(jess_dict)
 
 # Passing the JSON file to a Converter Function
-
+# JSON LOGS PARSED BY ELASTIC FILE BEATS 
 
 with open("cisco-cef_logs.log", "w") as f:
     for log in jess_dict:
@@ -47,7 +47,9 @@ with open("cisco-cef_logs.log", "w") as f:
         f.write(cef_log + "\n")
 
         
-        
+
+# MICROSOFT WINDOWS SECURITY LOGS 
+
 # cef_data = "CEF:0|source|name|version|signature_id|signature|severity|"        
 cef_header2 = "CEF:0|Microsoft|Microsoft Windows|Microsoft-Windows-Security-Auditing|1.12.0|"
 
