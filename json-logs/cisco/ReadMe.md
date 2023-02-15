@@ -96,8 +96,8 @@ Idenity what/which CEF fields that you will need to map  to the keys - map the c
 
 | CEF Field| Key Extracted from the Json file   |
 |----------|------------------------------------|
-|  act        |                                    |
-|    src      |                                    |
+| act      |                                    |
+| src      |  source.ip                         |
 |          |                                    |
 
 
