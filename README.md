@@ -43,3 +43,4 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [1] Log sampels  used from https://github.com/elastic/beats/tree/main/x-pack/filebeat/module
 * [1] https://learn.microsoft.com/en-us/azure/sentinel/cef-name-mapping
 
+* [1] https://learn.microsoft.com/en-us/azure/sentinel/cef-name-mapping
