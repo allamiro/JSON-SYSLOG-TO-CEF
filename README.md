@@ -2,11 +2,15 @@
 
 
 # JSON & SYSLOG to CEF converter
-## JSON to CEF 
-convert your JSON events to CEF format
+
 * Author : Tamir Suliman
 * Date : 02-09-2023
 
+  
+## JSON to CEF 
+
+
+convert your JSON events to CEF format
 * Converting from JSON to CEF involves mapping the fields from the JSON data to the fields in the Common Event Format (CEF). CEF is a standardized log format that enables log management systems to process and store logs from various security and network devices.
 
 * The CEF format consists of a number of key-value pairs that provide information about the log event. The basic structure of a CEF log message is as follows:
@@ -27,6 +31,7 @@ CEF:Version|Device Vendor|Device Product|Device Version|Signature ID|Name|Severi
 ### CISCO Logs
 
 ##  SYSLOG to CEF 
+Convert your Syslog format to CEF format 
 Syslog,  is an open standard for logging and reporting events from computer systems, network devices, and other IT assets. Syslog is supported by a wide range of network devices and operating systems, making it a widely used logging format. Syslog messages contain a priority value, which indicates the severity of the event, and a message body, which provides detailed information about the event.
 
 
