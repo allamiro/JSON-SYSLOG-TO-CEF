@@ -1,9 +1,9 @@
 from __future__ import annotations
 
+from collections.abc import Mapping
 from dataclasses import dataclass, field
 from datetime import datetime, timezone, tzinfo
-from typing import Any, Dict, Mapping
-
+from typing import Any
 
 
 @dataclass(slots=True)
@@ -15,11 +15,11 @@ class ParsedEvent:
     app_name: str | None
     priority: int | None
     message: str
-    fields: Dict[str, Any] = field(default_factory=dict)
+    fields: dict[str, Any] = field(default_factory=dict)
     raw: Mapping[str, Any] | None = None
     source: str | None = None
 
-    def copy_with_fields(self, **extra: Any) -> "ParsedEvent":
+    def copy_with_fields(self, **extra: Any) -> ParsedEvent:
         combined = dict(self.fields)
         combined.update(extra)
         return ParsedEvent(

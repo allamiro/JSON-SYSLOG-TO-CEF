@@ -3,7 +3,7 @@ from __future__ import annotations
 from collections.abc import Mapping as MappingABC
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Dict, Protocol
+from typing import Protocol
 
 from ..cef import priority_to_severity
 from ..utils import ParsedEvent, sanitize_text
@@ -16,7 +16,7 @@ class MappingResult:
     signature_id: str
     name: str
     severity: int
-    extensions: Dict[str, str]
+    extensions: dict[str, str]
 
 
 class Mapping(Protocol):
@@ -39,7 +39,7 @@ class BaseMapping:
         )
 
 
-def load_mapping_file(path: str | Path) -> Dict[str, str]:
+def load_mapping_file(path: str | Path) -> dict[str, str]:
     file_path = Path(path)
     text = file_path.read_text(encoding="utf-8")
     if file_path.suffix in {".yaml", ".yml"}:

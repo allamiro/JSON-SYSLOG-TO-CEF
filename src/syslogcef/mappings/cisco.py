@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from ..cef import priority_to_severity
 from ..utils import ParsedEvent, sanitize_text
 from .base import BaseMapping, MappingResult
@@ -18,7 +16,7 @@ class CiscoMapping(BaseMapping):
         message = sanitize_text(fields.get("msg", event.message))
         name = sanitize_text(fields.get("event", message)) or "Cisco Event"
         severity = _severity_from_message(message, event.priority)
-        extensions: Dict[str, str] = {
+        extensions: dict[str, str] = {
             "deviceHostName": sanitize_text(event.host or ""),
             "deviceProcessName": sanitize_text(event.app_name or ""),
             "msg": message,
@@ -29,7 +27,12 @@ class CiscoMapping(BaseMapping):
                 extensions[normalized_key] = sanitize_text(fields[key])
         if "action" in fields:
             extensions["act"] = sanitize_text(fields["action"])
-        return MappingResult(signature_id=signature, name=name, severity=severity, extensions=extensions)
+        return MappingResult(
+            signature_id=signature,
+            name=name,
+            severity=severity,
+            extensions=extensions,
+        )
 
 
 def _severity_from_message(message: str, priority: int | None) -> int:

@@ -5,9 +5,11 @@ import json
 import sys
 import time
 from collections import defaultdict
+from collections.abc import Iterable, Iterator
+from collections.abc import Mapping as MappingABC
 from concurrent.futures import Executor, ThreadPoolExecutor
+from datetime import tzinfo
 from pathlib import Path
-from typing import Iterable, Iterator, Mapping, Optional
 
 try:  # pragma: no cover - optional dependency
     from dateutil import tz
@@ -70,7 +72,7 @@ class OverrideMapping:
         self.overrides = overrides
         self.name = base.name
 
-    def map(self, event: ParsedEvent):  # type: ignore[override]
+    def map(self, event: ParsedEvent) -> MappingResult:
         base_result: MappingResult = self.base.map(event)
         extensions = dict(base_result.extensions)
         if self.overrides:
@@ -88,7 +90,7 @@ class OverrideMapping:
         )
 
 
-def main(argv: Optional[Iterable[str]] = None) -> int:
+def main(argv: Iterable[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
 
@@ -101,9 +103,11 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
         mapping = OverrideMapping(base_mapping, overrides)
 
     input_iter = open_input(args.input, watch=args.watch)
-    output_stream = sys.stdout if args.output == "-" else open(args.output, "w", encoding="utf-8")
+    output_stream = (
+        sys.stdout if args.output == "-" else open(args.output, "w", encoding="utf-8")
+    )
 
-    executor: Optional[Executor] = None
+    executor: Executor | None = None
     if args.workers and args.workers > 1:
         executor = ThreadPoolExecutor(max_workers=args.workers)
 
@@ -169,12 +173,17 @@ def open_input(path: str, *, watch: bool) -> Iterator[str]:
     return watcher()
 
 
-def convert_single(line: str, mapping: Mapping, args, default_tz):
+def convert_single(
+    line: str,
+    mapping: Mapping,
+    args: argparse.Namespace,
+    default_tz: tzinfo | None,
+) -> str:
     if args.format:
         try:
             if args.format == "json":
                 data = json.loads(line)
-                if not isinstance(data, Mapping):
+                if not isinstance(data, MappingABC):
                     raise ValueError("JSON log line must be an object")
                 event = from_json(data, default_tz=default_tz)
             else:

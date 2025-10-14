@@ -1,7 +1,7 @@
 from __future__ import annotations
 
+from collections.abc import Iterable, Mapping
 from dataclasses import dataclass
-from typing import Iterable, Mapping, Tuple
 
 from .utils import sanitize_text
 
@@ -60,7 +60,7 @@ def normalize_extension_key(key: str) -> str:
     return "".join(normalized)[:1023]
 
 
-def format_extensions(pairs: Mapping[str, str] | Iterable[Tuple[str, str]]) -> str:
+def format_extensions(pairs: Mapping[str, str] | Iterable[tuple[str, str]]) -> str:
     if isinstance(pairs, Mapping):
         items = pairs.items()
     else:
@@ -92,7 +92,7 @@ def priority_to_severity(priority: int | None) -> int:
 
 def build_cef(
     header: CEFHeader,
-    extensions: Mapping[str, str] | Iterable[Tuple[str, str]] | None = None,
+    extensions: Mapping[str, str] | Iterable[tuple[str, str]] | None = None,
 ) -> str:
     payload = header.as_str()
     if extensions:

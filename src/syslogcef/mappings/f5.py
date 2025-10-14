@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from ..cef import priority_to_severity
 from ..utils import ParsedEvent, sanitize_text
 from .base import BaseMapping, MappingResult
@@ -18,7 +16,7 @@ class F5Mapping(BaseMapping):
         name = sanitize_text(fields.get("irule", fields.get("event", "F5 Event")))
         severity = priority_to_severity(event.priority)
         message = sanitize_text(event.message)
-        extensions: Dict[str, str] = {
+        extensions: dict[str, str] = {
             "msg": message,
             "deviceHostName": sanitize_text(event.host or ""),
             "deviceProcessName": sanitize_text(event.app_name or ""),
@@ -28,7 +26,12 @@ class F5Mapping(BaseMapping):
                 extensions[_KEY_MAP.get(key, key)] = sanitize_text(fields[key])
         if "request" in fields:
             extensions["request"] = sanitize_text(fields["request"])
-        return MappingResult(signature_id=signature, name=name, severity=severity, extensions=extensions)
+        return MappingResult(
+            signature_id=signature,
+            name=name,
+            severity=severity,
+            extensions=extensions,
+        )
 
 
 _KEY_MAP = {

@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from datetime import datetime
-from typing import Optional
 
 try:  # pragma: no cover - optional dependency
     from dateutil import parser as date_parser
@@ -16,7 +15,7 @@ COMMON_FORMATS = [
 ]
 
 
-def smart_parse(text: str) -> Optional[datetime]:
+def smart_parse(text: str) -> datetime | None:
     if not text or text == "-":
         return None
     if date_parser is not None:

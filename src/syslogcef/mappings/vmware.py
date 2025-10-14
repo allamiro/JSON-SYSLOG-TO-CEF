@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from ..cef import priority_to_severity
 from ..utils import ParsedEvent, sanitize_text
 from .base import BaseMapping, MappingResult
@@ -18,7 +16,7 @@ class VMwareMapping(BaseMapping):
         name = sanitize_text(fields.get("event", fields.get("eventType", "VMware Event")))
         severity = priority_to_severity(event.priority)
         message = sanitize_text(event.message)
-        extensions: Dict[str, str] = {
+        extensions: dict[str, str] = {
             "msg": message,
             "deviceHostName": sanitize_text(event.host or ""),
             "deviceProcessName": sanitize_text(event.app_name or ""),
@@ -29,7 +27,12 @@ class VMwareMapping(BaseMapping):
             extensions["destinationServiceName"] = sanitize_text(fields["vm"])
         if "ip" in fields:
             extensions["src"] = sanitize_text(fields["ip"])
-        return MappingResult(signature_id=signature, name=name, severity=severity, extensions=extensions)
+        return MappingResult(
+            signature_id=signature,
+            name=name,
+            severity=severity,
+            extensions=extensions,
+        )
 
 
 mapping = VMwareMapping()

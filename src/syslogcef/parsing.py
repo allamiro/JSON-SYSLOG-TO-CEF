@@ -4,7 +4,6 @@ import json
 import re
 from dataclasses import dataclass
 from datetime import datetime, tzinfo
-from typing import Dict
 
 from ._datetime import smart_parse
 from .utils import ParsedEvent, ensure_tz, sanitize_text
@@ -42,8 +41,8 @@ class ParsedSyslog:
     procid: str | None
     msgid: str | None
     message: str
-    structured_data: Dict[str, Dict[str, str]]
-    kv_pairs: Dict[str, str]
+    structured_data: dict[str, dict[str, str]]
+    kv_pairs: dict[str, str]
     raw: str
 
     def as_event(self, default_tz: tzinfo | None = None) -> ParsedEvent:
@@ -70,8 +69,8 @@ class ParsedSyslog:
         )
 
 
-def flatten_structured_data(data: Dict[str, Dict[str, str]]) -> Dict[str, str]:
-    flattened: Dict[str, str] = {}
+def flatten_structured_data(data: dict[str, dict[str, str]]) -> dict[str, str]:
+    flattened: dict[str, str] = {}
     for sd_id, kv in data.items():
         for key, value in kv.items():
             flattened[f"{sd_id}.{key}"] = value
@@ -82,22 +81,22 @@ def _parse_timestamp(text: str) -> datetime | None:
     return smart_parse(text)
 
 
-def _parse_structured_data(text: str) -> Dict[str, Dict[str, str]]:
+def _parse_structured_data(text: str) -> dict[str, dict[str, str]]:
     if text == "-" or not text:
         return {}
-    result: Dict[str, Dict[str, str]] = {}
+    result: dict[str, dict[str, str]] = {}
     for match in re.finditer(r"\[(?P<id>[^\s\]=]+)(?P<data>[^\]]*)\]", text):
         sd_id = match.group("id")
         data_text = match.group("data")
-        sd_dict: Dict[str, str] = {}
+        sd_dict: dict[str, str] = {}
         for kv_match in re.finditer(r"(?P<key>[\w\-.]+)=\"(?P<value>.*?)\"", data_text):
             sd_dict[kv_match.group("key")] = kv_match.group("value")
         result[sd_id] = sd_dict
     return result
 
 
-def parse_kv_pairs(text: str) -> Dict[str, str]:
-    pairs: Dict[str, str] = {}
+def parse_kv_pairs(text: str) -> dict[str, str]:
+    pairs: dict[str, str] = {}
     for match in KV_RE.finditer(text):
         value = match.group("value")
         if value.startswith('"') and value.endswith('"'):
@@ -147,8 +146,8 @@ def parse_syslog(line: str, *, default_tz: tzinfo | None = None) -> ParsedSyslog
     match = RFC3164_RE.match(raw_line)
     pri = version = None
     timestamp = hostname = appname = procid = msgid = None
-    structured_data: Dict[str, Dict[str, str]] = {}
-    kv_pairs: Dict[str, str] = {}
+    structured_data: dict[str, dict[str, str]] = {}
+    kv_pairs: dict[str, str] = {}
     message = raw_line
     if match:
         pri = int(match.group("pri"))

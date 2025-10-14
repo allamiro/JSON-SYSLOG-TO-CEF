@@ -1,13 +1,11 @@
 from __future__ import annotations
 
-from typing import Dict
-
 from .base import BaseMapping, Mapping, MappingResult
-from .cisco import CiscoMapping, mapping as cisco
-from .default import DefaultMapping, mapping as default
-from .f5 import F5Mapping, mapping as f5
-from .linux import LinuxMapping, mapping as linux
-from .vmware import VMwareMapping, mapping as vmware
+from .cisco import mapping as cisco
+from .default import mapping as default
+from .f5 import mapping as f5
+from .linux import mapping as linux
+from .vmware import mapping as vmware
 
 __all__ = [
     "BaseMapping",
@@ -21,7 +19,7 @@ __all__ = [
     "vmware",
 ]
 
-_REGISTRY: Dict[str, BaseMapping] = {
+_REGISTRY: dict[str, BaseMapping] = {
     "default": default,
     "cisco": cisco,
     "linux": linux,
@@ -37,4 +35,4 @@ def get_mapping(name: str | None) -> BaseMapping:
     try:
         return _REGISTRY[key]
     except KeyError:
-        raise KeyError(f"Unknown mapping '{name}'")
+        raise KeyError(f"Unknown mapping '{name}'") from None

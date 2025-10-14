@@ -1,15 +1,18 @@
 from __future__ import annotations
 
 import json
+from collections.abc import Iterable
+from collections.abc import Mapping as MappingABC
 from datetime import datetime, tzinfo
-from typing import Any, Iterable, Mapping
+from typing import Any
 
+from ._datetime import smart_parse
 from .cef import CEFHeader, build_cef
 from .mappings import get_mapping
 from .mappings.base import Mapping
-from .parsing import ParsedSyslog, parse_syslog as _parse_syslog
+from .parsing import ParsedSyslog
+from .parsing import parse_syslog as _parse_syslog
 from .utils import ParsedEvent, ensure_tz, sanitize_text
-from ._datetime import smart_parse
 
 __all__ = ["convert_line", "parse_syslog", "from_json", "to_cef"]
 
@@ -23,7 +26,9 @@ def parse_syslog(line: str, *, default_tz: tzinfo | None = None) -> ParsedSyslog
     return _parse_syslog(line, default_tz=default_tz)
 
 
-def from_json(event: Mapping[str, Any], *, default_tz: tzinfo | None = None) -> ParsedEvent:
+def from_json(
+    event: MappingABC[str, Any], *, default_tz: tzinfo | None = None
+) -> ParsedEvent:
     timestamp = _parse_timestamp(event)
     if timestamp:
         timestamp = ensure_tz(timestamp, default_tz)
@@ -49,7 +54,7 @@ def from_json(event: Mapping[str, Any], *, default_tz: tzinfo | None = None) -> 
     )
 
 
-def _parse_timestamp(event: Mapping[str, Any]) -> datetime | None:
+def _parse_timestamp(event: MappingABC[str, Any]) -> datetime | None:
     for key in ("timestamp", "time", "@timestamp", "eventTime"):
         value = event.get(key)
         if not value:
@@ -60,7 +65,7 @@ def _parse_timestamp(event: Mapping[str, Any]) -> datetime | None:
     return None
 
 
-def _coalesce(data: Mapping[str, Any], keys: Iterable[str]) -> str | None:
+def _coalesce(data: MappingABC[str, Any], keys: Iterable[str]) -> str | None:
     for key in keys:
         value = data.get(key)
         if value:
@@ -126,7 +131,11 @@ def convert_line(
             app_name=None,
             priority=None,
             message=line.strip(),
-            fields={"flexString1": "parse_error", "cs1Label": "error", "cs1": sanitize_text(str(exc))},
+            fields={
+                "flexString1": "parse_error",
+                "cs1Label": "error",
+                "cs1": sanitize_text(str(exc)),
+            },
             raw=None,
             source=source,
         )
@@ -142,7 +151,7 @@ def _parse_line_to_event(
     trimmed = line.strip()
     if trimmed.startswith("{"):
         data = json.loads(trimmed)
-        if not isinstance(data, Mapping):
+        if not isinstance(data, MappingABC):
             raise ValueError("JSON log line must be an object")
         return from_json(data, default_tz=default_tz)
     syslog = parse_syslog(line, default_tz=default_tz)
