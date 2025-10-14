@@ -103,9 +103,7 @@ def main(argv: Iterable[str] | None = None) -> int:
         mapping = OverrideMapping(base_mapping, overrides)
 
     input_iter = open_input(args.input, watch=args.watch)
-    output_stream = (
-        sys.stdout if args.output == "-" else open(args.output, "w", encoding="utf-8")
-    )
+    output_stream = sys.stdout if args.output == "-" else open(args.output, "w", encoding="utf-8")
 
     executor: Executor | None = None
     if args.workers and args.workers > 1:

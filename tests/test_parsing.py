@@ -16,9 +16,7 @@ def test_parse_rfc3164_line():
 
 
 def test_parse_rfc5424_line():
-    line = (
-        "<134>1 2023-02-01T12:34:56Z host app 1234 - [exampleSDID@32473 foo=\"bar\"] message"
-    )
+    line = '<134>1 2023-02-01T12:34:56Z host app 1234 - [exampleSDID@32473 foo="bar"] message'
     parsed = parse_syslog(line)
     assert parsed.version == 1
     assert parsed.structured_data["exampleSDID@32473"]["foo"] == "bar"

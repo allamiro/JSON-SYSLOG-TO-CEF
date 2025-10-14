@@ -26,9 +26,7 @@ def parse_syslog(line: str, *, default_tz: tzinfo | None = None) -> ParsedSyslog
     return _parse_syslog(line, default_tz=default_tz)
 
 
-def from_json(
-    event: MappingABC[str, Any], *, default_tz: tzinfo | None = None
-) -> ParsedEvent:
+def from_json(event: MappingABC[str, Any], *, default_tz: tzinfo | None = None) -> ParsedEvent:
     timestamp = _parse_timestamp(event)
     if timestamp:
         timestamp = ensure_tz(timestamp, default_tz)

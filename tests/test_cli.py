@@ -21,12 +21,14 @@ def test_cli_mapping_override(tmp_path, capsys, monkeypatch):
     with mapping_file.open("w", encoding="utf-8") as handle:
         json.dump({"cs2Label": "custom"}, handle)
     monkeypatch.setattr("sys.stdin", io.StringIO("not syslog\n"))
-    exit_code = cli.main([
-        "--source",
-        "default",
-        "--mapping-file",
-        str(mapping_file),
-    ])
+    exit_code = cli.main(
+        [
+            "--source",
+            "default",
+            "--mapping-file",
+            str(mapping_file),
+        ]
+    )
     captured = capsys.readouterr()
     assert exit_code == 0
     assert "cs2Label=custom" in captured.out

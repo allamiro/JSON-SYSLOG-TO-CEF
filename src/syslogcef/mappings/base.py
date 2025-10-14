@@ -22,8 +22,7 @@ class MappingResult:
 class Mapping(Protocol):
     name: str
 
-    def map(self, event: ParsedEvent) -> MappingResult:
-        ...
+    def map(self, event: ParsedEvent) -> MappingResult: ...
 
 
 class BaseMapping:
