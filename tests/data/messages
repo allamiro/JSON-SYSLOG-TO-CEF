@@ -1,0 +1,268 @@
+Feb  7 17:03:27 kafka3 systemd[1]: Started dnf makecache.
+Feb  7 18:21:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  7 18:21:24 kafka3 dnf[118961]: Metadata cache refreshed recently.
+Feb  7 18:21:24 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  7 18:21:24 kafka3 systemd[1]: Started dnf makecache.
+Feb  7 19:30:06 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  7 20:14:59 kafka3 systemd[1]: Starting dnf makecache...
+Feb  7 20:15:00 kafka3 dnf[119961]: Rocky Linux 8 - AppStream                       6.3 kB/s | 4.7 kB     00:00
+Feb  7 20:15:03 kafka3 dnf[119961]: Rocky Linux 8 - AppStream                       2.8 MB/s | 9.6 MB     00:03
+Feb  7 20:15:07 kafka3 dnf[119961]: Rocky Linux 8 - BaseOS                           11 kB/s | 4.3 kB     00:00
+Feb  7 20:15:08 kafka3 dnf[119961]: Rocky Linux 8 - BaseOS                          3.5 MB/s | 3.8 MB     00:01
+Feb  7 20:15:10 kafka3 dnf[119961]: Rocky Linux 8 - Extras                          5.0 kB/s | 3.5 kB     00:00
+Feb  7 20:15:10 kafka3 dnf[119961]: DigitalOcean Droplet Agent                       25 kB/s | 3.3 kB     00:00
+Feb  7 20:15:10 kafka3 dnf[119961]: Extra Packages for Enterprise Linux 8 - x86_64   67 kB/s |  30 kB     00:00
+Feb  7 20:15:12 kafka3 dnf[119961]: Metadata cache created.
+Feb  7 20:15:12 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  7 20:15:12 kafka3 systemd[1]: Started dnf makecache.
+Feb  7 21:21:07 kafka3 systemd[1]: Starting Cleanup of Temporary Directories...
+Feb  7 21:21:07 kafka3 systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+Feb  7 21:21:07 kafka3 systemd[1]: Started Cleanup of Temporary Directories.
+Feb  7 21:29:15 kafka3 systemd[1]: Starting dnf makecache...
+Feb  7 21:29:15 kafka3 dnf[120503]: Metadata cache refreshed recently.
+Feb  7 21:29:15 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  7 21:29:15 kafka3 systemd[1]: Started dnf makecache.
+Feb  7 22:56:18 kafka3 systemd[1]: Starting dnf makecache...
+Feb  7 22:56:18 kafka3 dnf[120832]: Metadata cache refreshed recently.
+Feb  7 22:56:18 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  7 22:56:18 kafka3 systemd[1]: Started dnf makecache.
+Feb  7 23:25:59 kafka3 auditd[27177]: Audit daemon rotating log files
+Feb  8 00:00:01 kafka3 systemd[1]: Starting update of the root trust anchor for DNSSEC validation in unbound...
+Feb  8 00:00:01 kafka3 systemd[1]: unbound-anchor.service: Succeeded.
+Feb  8 00:00:01 kafka3 systemd[1]: Started update of the root trust anchor for DNSSEC validation in unbound.
+Feb  8 00:51:00 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 00:51:00 kafka3 dnf[121602]: Rocky Linux 8 - AppStream                       9.1 kB/s | 4.7 kB     00:00
+Feb  8 00:51:01 kafka3 dnf[121602]: Rocky Linux 8 - BaseOS                           13 kB/s | 4.3 kB     00:00
+Feb  8 00:51:01 kafka3 dnf[121602]: Rocky Linux 8 - Extras                          8.4 kB/s | 3.5 kB     00:00
+Feb  8 00:51:01 kafka3 dnf[121602]: DigitalOcean Droplet Agent                       25 kB/s | 3.3 kB     00:00
+Feb  8 00:51:02 kafka3 dnf[121602]: Extra Packages for Enterprise Linux 8 - x86_64   68 kB/s |  30 kB     00:00
+Feb  8 00:51:03 kafka3 dnf[121602]: Metadata cache created.
+Feb  8 00:51:03 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 00:51:03 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 02:09:15 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  8 02:49:57 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 02:49:57 kafka3 dnf[122569]: Metadata cache refreshed recently.
+Feb  8 02:49:57 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 02:49:57 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 03:53:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 03:53:25 kafka3 dnf[122923]: Rocky Linux 8 - AppStream                       7.2 kB/s | 4.7 kB     00:00
+Feb  8 03:53:25 kafka3 dnf[122923]: Rocky Linux 8 - BaseOS                           14 kB/s | 4.3 kB     00:00
+Feb  8 03:53:26 kafka3 dnf[122923]: Rocky Linux 8 - Extras                          6.3 kB/s | 3.5 kB     00:00
+Feb  8 03:53:26 kafka3 dnf[122923]: DigitalOcean Droplet Agent                       20 kB/s | 3.3 kB     00:00
+Feb  8 03:53:26 kafka3 dnf[122923]: Extra Packages for Enterprise Linux 8 - x86_64  695 kB/s |  29 kB     00:00
+Feb  8 03:53:26 kafka3 dnf[122923]: Extra Packages for Enterprise Linux 8 - x86_64   36 MB/s |  13 MB     00:00
+Feb  8 03:53:27 kafka3 dnf[122923]: Metadata cache created.
+Feb  8 03:53:27 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 03:53:27 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 05:12:31 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 05:12:32 kafka3 dnf[123663]: Metadata cache refreshed recently.
+Feb  8 05:12:32 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 05:12:32 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 06:58:03 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  8 07:11:16 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 07:11:18 kafka3 dnf[124846]: Rocky Linux 8 - AppStream                       3.3 kB/s | 4.7 kB     00:01
+Feb  8 07:11:18 kafka3 dnf[124846]: Rocky Linux 8 - BaseOS                           12 kB/s | 4.3 kB     00:00
+Feb  8 07:11:19 kafka3 dnf[124846]: Rocky Linux 8 - Extras                          8.1 kB/s | 3.5 kB     00:00
+Feb  8 07:11:19 kafka3 dnf[124846]: DigitalOcean Droplet Agent                       27 kB/s | 3.3 kB     00:00
+Feb  8 07:11:19 kafka3 dnf[124846]: Extra Packages for Enterprise Linux 8 - x86_64  270 kB/s |  29 kB     00:00
+Feb  8 07:11:19 kafka3 dnf[124846]: Extra Packages for Enterprise Linux 8 - x86_64   43 MB/s |  13 MB     00:00
+Feb  8 07:11:26 kafka3 dnf[124846]: Metadata cache created.
+Feb  8 07:11:26 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 07:11:26 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 08:18:19 kafka3 auditd[27177]: Audit daemon rotating log files
+Feb  8 09:04:14 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 09:04:14 kafka3 dnf[126218]: Metadata cache refreshed recently.
+Feb  8 09:04:14 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 09:04:14 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 10:08:09 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 10:08:09 kafka3 dnf[126813]: Metadata cache refreshed recently.
+Feb  8 10:08:09 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 10:08:09 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 10:08:09 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  8 11:37:45 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 11:37:46 kafka3 dnf[127197]: Rocky Linux 8 - AppStream                        13 kB/s | 4.7 kB     00:00
+Feb  8 11:37:49 kafka3 dnf[127197]: Rocky Linux 8 - BaseOS                          1.6 kB/s | 4.3 kB     00:02
+Feb  8 11:37:49 kafka3 dnf[127197]: Rocky Linux 8 - Extras                          8.0 kB/s | 3.5 kB     00:00
+Feb  8 11:37:51 kafka3 dnf[127197]: DigitalOcean Droplet Agent                      1.5 kB/s | 3.3 kB     00:02
+Feb  8 11:37:52 kafka3 dnf[127197]: Extra Packages for Enterprise Linux 8 - x86_64   51 kB/s |  25 kB     00:00
+Feb  8 11:37:53 kafka3 dnf[127197]: Metadata cache created.
+Feb  8 11:37:53 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 11:37:53 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 13:26:02 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 13:26:03 kafka3 dnf[128198]: Metadata cache refreshed recently.
+Feb  8 13:26:03 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 13:26:03 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 14:06:11 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  8 14:06:32 kafka3 auditd[27177]: Audit daemon rotating log files
+Feb  8 15:07:04 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 15:07:05 kafka3 dnf[130279]: Rocky Linux 8 - AppStream                        12 kB/s | 4.8 kB     00:00
+Feb  8 15:07:06 kafka3 dnf[130279]: Rocky Linux 8 - AppStream                       7.1 MB/s | 9.6 MB     00:01
+Feb  8 15:07:06 kafka3 dnf[130279]: Rocky Linux 8 - BaseOS                           16 kB/s | 4.3 kB     00:00
+Feb  8 15:07:07 kafka3 dnf[130279]: Rocky Linux 8 - Extras                          9.0 kB/s | 3.5 kB     00:00
+Feb  8 15:07:07 kafka3 dnf[130279]: DigitalOcean Droplet Agent                       79 kB/s | 3.3 kB     00:00
+Feb  8 15:07:07 kafka3 dnf[130279]: Extra Packages for Enterprise Linux 8 - x86_64   71 kB/s |  29 kB     00:00
+Feb  8 15:07:08 kafka3 dnf[130279]: Metadata cache created.
+Feb  8 15:07:08 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 15:07:08 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 16:22:48 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 16:22:49 kafka3 dnf[131105]: Metadata cache refreshed recently.
+Feb  8 16:22:49 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 16:22:49 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 16:50:40 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  8 17:45:18 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 17:45:18 kafka3 dnf[131966]: Metadata cache refreshed recently.
+Feb  8 17:45:19 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 17:45:19 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 18:56:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 18:56:25 kafka3 dnf[132285]: Rocky Linux 8 - AppStream                        14 kB/s | 4.7 kB     00:00
+Feb  8 18:56:26 kafka3 dnf[132285]: Rocky Linux 8 - BaseOS                          3.1 kB/s | 4.3 kB     00:01
+Feb  8 18:56:26 kafka3 dnf[132285]: Rocky Linux 8 - Extras                           12 kB/s | 3.5 kB     00:00
+Feb  8 18:56:27 kafka3 dnf[132285]: DigitalOcean Droplet Agent                      8.5 kB/s | 3.3 kB     00:00
+Feb  8 18:56:27 kafka3 dnf[132285]: Extra Packages for Enterprise Linux 8 - x86_64   74 kB/s |  29 kB     00:00
+Feb  8 18:56:28 kafka3 dnf[132285]: Metadata cache created.
+Feb  8 18:56:28 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 18:56:28 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 20:39:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 20:39:24 kafka3 dnf[132433]: Metadata cache refreshed recently.
+Feb  8 20:39:24 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 20:39:24 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 21:21:12 kafka3 systemd[1]: Starting Cleanup of Temporary Directories...
+Feb  8 21:21:12 kafka3 systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+Feb  8 21:21:12 kafka3 systemd[1]: Started Cleanup of Temporary Directories.
+Feb  8 22:06:09 kafka3 auditd[27177]: Audit daemon rotating log files
+Feb  8 22:11:54 kafka3 systemd[1]: Starting dnf makecache...
+Feb  8 22:11:55 kafka3 dnf[133557]: Rocky Linux 8 - AppStream                        12 kB/s | 4.7 kB     00:00
+Feb  8 22:11:55 kafka3 dnf[133557]: Rocky Linux 8 - BaseOS                           11 kB/s | 4.3 kB     00:00
+Feb  8 22:11:57 kafka3 dnf[133557]: Rocky Linux 8 - BaseOS                          2.0 MB/s | 3.8 MB     00:01
+Feb  8 22:11:59 kafka3 dnf[133557]: Rocky Linux 8 - Extras                          5.1 kB/s | 3.5 kB     00:00
+Feb  8 22:11:59 kafka3 dnf[133557]: DigitalOcean Droplet Agent                       26 kB/s | 3.3 kB     00:00
+Feb  8 22:11:59 kafka3 dnf[133557]: Extra Packages for Enterprise Linux 8 - x86_64   74 kB/s |  29 kB     00:00
+Feb  8 22:12:01 kafka3 dnf[133557]: Metadata cache created.
+Feb  8 22:12:01 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  8 22:12:01 kafka3 systemd[1]: Started dnf makecache.
+Feb  8 22:30:04 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  9 00:00:00 kafka3 systemd[1]: Starting update of the root trust anchor for DNSSEC validation in unbound...
+Feb  9 00:00:00 kafka3 systemd[1]: unbound-anchor.service: Succeeded.
+Feb  9 00:00:00 kafka3 systemd[1]: Started update of the root trust anchor for DNSSEC validation in unbound.
+Feb  9 00:07:04 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 00:07:04 kafka3 dnf[134297]: Metadata cache refreshed recently.
+Feb  9 00:07:04 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 00:07:04 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 01:57:47 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 01:57:48 kafka3 dnf[135537]: Rocky Linux 8 - AppStream                        10 kB/s | 4.8 kB     00:00
+Feb  9 01:57:51 kafka3 dnf[135537]: Rocky Linux 8 - AppStream                       4.0 MB/s | 9.6 MB     00:02
+Feb  9 01:57:55 kafka3 dnf[135537]: Rocky Linux 8 - BaseOS                          3.2 kB/s | 4.3 kB     00:01
+Feb  9 01:57:55 kafka3 dnf[135537]: Rocky Linux 8 - Extras                           11 kB/s | 3.1 kB     00:00
+Feb  9 01:57:57 kafka3 dnf[135537]: Rocky Linux 8 - Extras                          4.7 kB/s |  12 kB     00:02
+Feb  9 01:57:58 kafka3 dnf[135537]: DigitalOcean Droplet Agent                       26 kB/s | 3.3 kB     00:00
+Feb  9 01:57:58 kafka3 dnf[135537]: Extra Packages for Enterprise Linux 8 - x86_64   76 kB/s |  29 kB     00:00
+Feb  9 01:57:59 kafka3 dnf[135537]: Extra Packages for Enterprise Linux 8 - x86_64   18 MB/s |  13 MB     00:00
+Feb  9 01:58:00 kafka3 dnf[135537]: Metadata cache created.
+Feb  9 01:58:00 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 01:58:00 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 03:41:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 03:41:24 kafka3 dnf[136378]: Metadata cache refreshed recently.
+Feb  9 03:41:24 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 03:41:24 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 03:47:17 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  9 05:03:06 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 05:03:37 kafka3 dnf[137172]: Rocky Linux 8 - AppStream                       0.0  B/s |   0  B     00:30
+Feb  9 05:03:37 kafka3 dnf[137172]: Errors during downloading metadata for repository 'appstream':
+Feb  9 05:03:37 kafka3 dnf[137172]:  - Curl error (28): Timeout was reached for https://dal1-repo-mirror001.vultr.shrug.pw/rocky/8.7/AppStream/x86_64/os/repodata/repomd.xml [Connection timed out after 30000 milliseconds]
+Feb  9 05:03:37 kafka3 dnf[137172]: Error: Failed to download metadata for repo 'appstream': Cannot download repomd.xml: Curl error (28): Timeout was reached for https://dal1-repo-mirror001.vultr.shrug.pw/rocky/8.7/AppStream/x86_64/os/repodata/repomd.xml [Connection timed out after 30000 milliseconds]
+Feb  9 05:03:37 kafka3 systemd[1]: dnf-makecache.service: Main process exited, code=exited, status=1/FAILURE
+Feb  9 05:03:37 kafka3 systemd[1]: dnf-makecache.service: Failed with result 'exit-code'.
+Feb  9 05:03:37 kafka3 systemd[1]: Failed to start dnf makecache.
+Feb  9 05:45:19 kafka3 auditd[27177]: Audit daemon rotating log files
+Feb  9 06:42:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 06:42:24 kafka3 dnf[137760]: Metadata cache refreshed recently.
+Feb  9 06:42:24 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 06:42:24 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 08:17:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 08:17:25 kafka3 dnf[138066]: Rocky Linux 8 - AppStream                       8.3 kB/s | 4.8 kB     00:00
+Feb  9 08:17:25 kafka3 dnf[138066]: Rocky Linux 8 - BaseOS                          0.0  B/s |   0  B     00:00
+Feb  9 08:17:25 kafka3 dnf[138066]: Errors during downloading metadata for repository 'baseos':
+Feb  9 08:17:25 kafka3 dnf[138066]:  - Curl error (56): Failure when receiving data from the peer for http://mirror.atl.genesisadaptive.com/rocky/8.7/BaseOS/x86_64/os/repodata/repomd.xml [Recv failure: Connection reset by peer]
+Feb  9 08:17:25 kafka3 dnf[138066]: Error: Failed to download metadata for repo 'baseos': Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for http://mirror.atl.genesisadaptive.com/rocky/8.7/BaseOS/x86_64/os/repodata/repomd.xml [Recv failure: Connection reset by peer]
+Feb  9 08:17:25 kafka3 systemd[1]: dnf-makecache.service: Main process exited, code=exited, status=1/FAILURE
+Feb  9 08:17:25 kafka3 systemd[1]: dnf-makecache.service: Failed with result 'exit-code'.
+Feb  9 08:17:25 kafka3 systemd[1]: Failed to start dnf makecache.
+Feb  9 09:27:11 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 09:27:11 kafka3 dnf[138220]: Metadata cache refreshed recently.
+Feb  9 09:27:11 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 09:27:11 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 10:41:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 10:41:24 kafka3 dnf[138559]: Metadata cache refreshed recently.
+Feb  9 10:41:24 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 10:41:24 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 11:18:13 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  9 11:43:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 11:43:25 kafka3 dnf[139089]: Rocky Linux 8 - AppStream                        10 kB/s | 4.8 kB     00:00
+Feb  9 11:43:25 kafka3 dnf[139089]: Rocky Linux 8 - BaseOS                           10 kB/s | 4.3 kB     00:00
+Feb  9 11:43:26 kafka3 dnf[139089]: Rocky Linux 8 - Extras                          5.2 kB/s | 3.5 kB     00:00
+Feb  9 11:43:27 kafka3 dnf[139089]: Rocky Linux 8 - Extras                           13 kB/s |  12 kB     00:00
+Feb  9 11:43:27 kafka3 dnf[139089]: DigitalOcean Droplet Agent                       24 kB/s | 3.3 kB     00:00
+Feb  9 11:43:27 kafka3 dnf[139089]: Extra Packages for Enterprise Linux 8 - x86_64   55 kB/s |  25 kB     00:00
+Feb  9 11:43:28 kafka3 dnf[139089]: Extra Packages for Enterprise Linux 8 - x86_64   20 MB/s |  13 MB     00:00
+Feb  9 11:43:37 kafka3 dnf[139089]: Metadata cache created.
+Feb  9 11:43:37 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 11:43:37 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 13:02:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 13:02:24 kafka3 dnf[140024]: Metadata cache refreshed recently.
+Feb  9 13:02:24 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 13:02:24 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 14:37:27 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  9 14:43:51 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 14:43:51 kafka3 dnf[141385]: Rocky Linux 8 - AppStream                        13 kB/s | 4.8 kB     00:00
+Feb  9 14:43:52 kafka3 dnf[141385]: Rocky Linux 8 - BaseOS                           14 kB/s | 4.3 kB     00:00
+Feb  9 14:43:52 kafka3 dnf[141385]: Rocky Linux 8 - Extras                           11 kB/s | 3.1 kB     00:00
+Feb  9 14:43:52 kafka3 dnf[141385]: DigitalOcean Droplet Agent                       22 kB/s | 3.3 kB     00:00
+Feb  9 14:43:53 kafka3 dnf[141385]: Extra Packages for Enterprise Linux 8 - x86_64   71 kB/s |  28 kB     00:00
+Feb  9 14:43:53 kafka3 dnf[141385]: Metadata cache created.
+Feb  9 14:43:53 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 14:43:53 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 15:08:39 kafka3 auditd[27177]: Audit daemon rotating log files
+Feb  9 15:59:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 15:59:24 kafka3 dnf[141781]: Metadata cache refreshed recently.
+Feb  9 15:59:24 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 15:59:24 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 17:40:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 17:40:24 kafka3 dnf[142567]: Metadata cache refreshed recently.
+Feb  9 17:40:24 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 17:40:24 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 19:32:13 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 19:32:14 kafka3 dnf[143271]: Rocky Linux 8 - AppStream                       7.2 kB/s | 4.8 kB     00:00
+Feb  9 19:32:15 kafka3 dnf[143271]: Rocky Linux 8 - BaseOS                          6.4 kB/s | 4.3 kB     00:00
+Feb  9 19:32:15 kafka3 dnf[143271]: Rocky Linux 8 - Extras                          6.6 kB/s | 3.1 kB     00:00
+Feb  9 19:32:15 kafka3 dnf[143271]: DigitalOcean Droplet Agent                       46 kB/s | 3.3 kB     00:00
+Feb  9 19:32:15 kafka3 dnf[143271]: Extra Packages for Enterprise Linux 8 - x86_64   75 kB/s |  30 kB     00:00
+Feb  9 19:32:16 kafka3 dnf[143271]: Metadata cache created.
+Feb  9 19:32:16 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 19:32:16 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 20:53:24 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 20:53:24 kafka3 dnf[143693]: Metadata cache refreshed recently.
+Feb  9 20:53:24 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 20:53:24 kafka3 systemd[1]: Started dnf makecache.
+Feb  9 20:56:21 kafka3 rsyslogd[27035]: imjournal: journal files changed, reloading...  [v8.2102.0-10.el8 try https://www.rsyslog.com/e/0 ]
+Feb  9 21:21:24 kafka3 systemd[1]: Starting Cleanup of Temporary Directories...
+Feb  9 21:21:24 kafka3 systemd[1]: systemd-tmpfiles-clean.service: Succeeded.
+Feb  9 21:21:24 kafka3 systemd[1]: Started Cleanup of Temporary Directories.
+Feb  9 22:24:08 kafka3 systemd[1]: Created slice User Slice of UID 0.
+Feb  9 22:24:08 kafka3 systemd[1]: Starting User runtime directory /run/user/0...
+Feb  9 22:24:08 kafka3 systemd-logind[798]: New session 3 of user root.
+Feb  9 22:24:08 kafka3 systemd[1]: Started User runtime directory /run/user/0.
+Feb  9 22:24:08 kafka3 systemd[1]: Starting User Manager for UID 0...
+Feb  9 22:24:08 kafka3 systemd[143935]: Starting D-Bus User Message Bus Socket.
+Feb  9 22:24:08 kafka3 systemd[143935]: Reached target Paths.
+Feb  9 22:24:08 kafka3 systemd[143935]: Reached target Timers.
+Feb  9 22:24:08 kafka3 systemd[143935]: Listening on D-Bus User Message Bus Socket.
+Feb  9 22:24:08 kafka3 systemd[143935]: Reached target Sockets.
+Feb  9 22:24:08 kafka3 systemd[143935]: Reached target Basic System.
+Feb  9 22:24:08 kafka3 systemd[143935]: Reached target Default.
+Feb  9 22:24:08 kafka3 systemd[143935]: Startup finished in 63ms.
+Feb  9 22:24:08 kafka3 systemd[1]: Started User Manager for UID 0.
+Feb  9 22:24:08 kafka3 systemd[1]: Started Session 3 of user root.
+Feb  9 22:31:59 kafka3 systemd[1]: Starting dnf makecache...
+Feb  9 22:31:59 kafka3 dnf[143985]: Metadata cache refreshed recently.
+Feb  9 22:31:59 kafka3 systemd[1]: dnf-makecache.service: Succeeded.
+Feb  9 22:31:59 kafka3 systemd[1]: Started dnf makecache.
