@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling>=1.18"]
+build-backend = "hatchling.build"
+
+[project]
+name = "syslogcef"
+version = "0.1.0"
+description = "High-performance conversion of syslog and JSON events to ArcSight CEF"
+readme = "README.md"
+authors = [{ name = "Original Authors" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/allamiro/JSON-SYSLOG-TO-CEF"
+Repository = "https://github.com/allamiro/JSON-SYSLOG-TO-CEF"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=4.0",
+    "mypy>=1.8",
+    "ruff>=0.5",
+    "black>=24.4",
+    "isort>=5.13",
+]
+
+[project.scripts]
+syslogcef = "syslogcef.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/syslogcef"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "B",
+]
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+addopts = "--strict-markers --strict-config"
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+mypy_path = "src"
+
