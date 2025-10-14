@@ -10,23 +10,31 @@ from collections.abc import Mapping as MappingABC
 from concurrent.futures import Executor, ThreadPoolExecutor
 from datetime import tzinfo
 from pathlib import Path
+from typing import TextIO
 
 try:  # pragma: no cover - optional dependency
-    from dateutil import tz
+    from dateutil import tz as _dateutil_tz
 except ImportError:  # pragma: no cover
     from zoneinfo import ZoneInfo
 
-    class _TZModule:
-        @staticmethod
-        def gettz(name: str | None):
-            if not name:
-                return None
-            try:
-                return ZoneInfo(name)
-            except Exception:
-                return None
+    def _get_timezone(name: str | None) -> tzinfo | None:
+        if not name:
+            return None
+        try:
+            return ZoneInfo(name)
+        except Exception:
+            return None
 
-    tz = _TZModule()  # type: ignore[assignment]
+else:
+
+    def _get_timezone(name: str | None) -> tzinfo | None:
+        if not name:
+            return None
+        result = _dateutil_tz.gettz(name)
+        if result is None or isinstance(result, tzinfo):
+            return result
+        return None
+
 
 from .converters import (
     DEFAULT_PRODUCT,
@@ -92,9 +100,9 @@ class OverrideMapping:
 
 def main(argv: Iterable[str] | None = None) -> int:
     parser = build_parser()
-    args = parser.parse_args(argv)
+    args = parser.parse_args(list(argv) if argv is not None else None)
 
-    default_tz = tz.gettz(args.timezone) if args.timezone else None
+    default_tz = _get_timezone(args.timezone)
 
     base_mapping = get_mapping(args.source)
     mapping: Mapping = base_mapping
@@ -103,7 +111,11 @@ def main(argv: Iterable[str] | None = None) -> int:
         mapping = OverrideMapping(base_mapping, overrides)
 
     input_iter = open_input(args.input, watch=args.watch)
-    output_stream = sys.stdout if args.output == "-" else open(args.output, "w", encoding="utf-8")
+    output_stream: TextIO
+    if args.output == "-":
+        output_stream = sys.stdout
+    else:
+        output_stream = open(args.output, "w", encoding="utf-8")
 
     executor: Executor | None = None
     if args.workers and args.workers > 1:

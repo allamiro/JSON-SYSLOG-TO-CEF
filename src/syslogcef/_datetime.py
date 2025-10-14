@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+from typing import Any
 
 try:  # pragma: no cover - optional dependency
     from dateutil import parser as date_parser
@@ -20,9 +21,12 @@ def smart_parse(text: str) -> datetime | None:
         return None
     if date_parser is not None:
         try:
-            return date_parser.parse(text)
+            parsed: Any = date_parser.parse(text)
         except (ValueError, TypeError):
             return None
+        if isinstance(parsed, datetime):
+            return parsed
+        return None
     cleaned = text.replace("Z", "+00:00")
     try:
         return datetime.fromisoformat(cleaned)

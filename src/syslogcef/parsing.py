@@ -117,6 +117,18 @@ def parse_kv_pairs(text: str) -> dict[str, str]:
 
 def parse_syslog(line: str, *, default_tz: tzinfo | None = None) -> ParsedSyslog:
     raw_line = line.rstrip("\n")
+
+    pri: int | None = None
+    version: int | None = None
+    timestamp: datetime | None = None
+    hostname: str | None = None
+    appname: str | None = None
+    procid: str | None = None
+    msgid: str | None = None
+    structured_data: dict[str, dict[str, str]] = {}
+    kv_pairs: dict[str, str] = {}
+    message = raw_line
+
     match = RFC5424_RE.match(raw_line)
     if match:
         pri = int(match.group("pri"))
@@ -127,38 +139,21 @@ def parse_syslog(line: str, *, default_tz: tzinfo | None = None) -> ParsedSyslog
         procid = _normalize_optional(match.group("procid"))
         msgid = _normalize_optional(match.group("msgid"))
         structured_data = _parse_structured_data(match.group("structured"))
-        msg = match.group("msg")
-        kv_pairs = parse_kv_pairs(msg)
-        return ParsedSyslog(
-            pri=pri,
-            version=version,
-            timestamp=ensure_tz(timestamp, default_tz),
-            hostname=hostname,
-            app_name=appname,
-            procid=procid,
-            msgid=msgid,
-            message=msg,
-            structured_data=structured_data,
-            kv_pairs=kv_pairs,
-            raw=raw_line,
-        )
-
-    match = RFC3164_RE.match(raw_line)
-    pri = version = None
-    timestamp = hostname = appname = procid = msgid = None
-    structured_data: dict[str, dict[str, str]] = {}
-    kv_pairs: dict[str, str] = {}
-    message = raw_line
-    if match:
-        pri = int(match.group("pri"))
-        timestamp = _parse_timestamp(match.group("timestamp"))
-        hostname = match.group("hostname")
-        appname = match.group("tag")
-        procid = match.group("pid")
         message = match.group("msg")
         kv_pairs = parse_kv_pairs(message)
     else:
-        kv_pairs = parse_kv_pairs(raw_line)
+        match = RFC3164_RE.match(raw_line)
+        if match:
+            pri = int(match.group("pri"))
+            timestamp = _parse_timestamp(match.group("timestamp"))
+            hostname = match.group("hostname")
+            appname = match.group("tag")
+            procid = match.group("pid")
+            message = match.group("msg")
+            kv_pairs = parse_kv_pairs(message)
+        else:
+            kv_pairs = parse_kv_pairs(raw_line)
+
     return ParsedSyslog(
         pri=pri,
         version=version,

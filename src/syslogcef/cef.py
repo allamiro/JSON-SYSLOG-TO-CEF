@@ -62,7 +62,7 @@ def normalize_extension_key(key: str) -> str:
 
 def format_extensions(pairs: Mapping[str, str] | Iterable[tuple[str, str]]) -> str:
     if isinstance(pairs, Mapping):
-        items = pairs.items()
+        items = [(str(key), str(value)) for key, value in pairs.items()]
     else:
         items = list(pairs)
     return " ".join(
