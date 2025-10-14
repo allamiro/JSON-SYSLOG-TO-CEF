@@ -1,0 +1,479 @@
+2023-02-08T17:45:18+0000 DEBUG DNF version: 4.7.0
+2023-02-08T17:45:18+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-08T17:45:18+0000 DDEBUG Installroot: /
+2023-02-08T17:45:18+0000 DDEBUG Releasever: 8
+2023-02-08T17:45:18+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-08T17:45:18+0000 DDEBUG Base command: makecache
+2023-02-08T17:45:18+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-08T17:45:18+0000 DEBUG Making cache files for all metadata files.
+2023-02-08T17:45:18+0000 INFO Metadata cache refreshed recently.
+2023-02-08T17:45:18+0000 DDEBUG Cleaning up.
+2023-02-08T18:56:24+0000 INFO --- logging initialized ---
+2023-02-08T18:56:24+0000 DDEBUG timer: config: 6 ms
+2023-02-08T18:56:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-08T18:56:24+0000 DEBUG DNF version: 4.7.0
+2023-02-08T18:56:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-08T18:56:24+0000 DDEBUG Installroot: /
+2023-02-08T18:56:24+0000 DDEBUG Releasever: 8
+2023-02-08T18:56:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-08T18:56:24+0000 DDEBUG Base command: makecache
+2023-02-08T18:56:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-08T18:56:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-08T18:56:24+0000 DEBUG appstream: has expired and will be refreshed.
+2023-02-08T18:56:24+0000 DEBUG baseos: has expired and will be refreshed.
+2023-02-08T18:56:24+0000 DEBUG extras: has expired and will be refreshed.
+2023-02-08T18:56:24+0000 DEBUG droplet-agent: has expired and will be refreshed.
+2023-02-08T18:56:24+0000 DEBUG epel: has expired and will be refreshed.
+2023-02-08T18:56:24+0000 DEBUG countme: no event for appstream: window already counted
+2023-02-08T18:56:25+0000 DEBUG reviving: 'appstream' can be revived - repomd matches.
+2023-02-08T18:56:25+0000 DEBUG appstream: using metadata from Tue 07 Feb 2023 05:24:12 PM UTC.
+2023-02-08T18:56:25+0000 DEBUG countme: no event for baseos: window already counted
+2023-02-08T18:56:26+0000 DEBUG reviving: 'baseos' can be revived - repomd matches.
+2023-02-08T18:56:26+0000 DEBUG baseos: using metadata from Tue 07 Feb 2023 05:24:16 PM UTC.
+2023-02-08T18:56:26+0000 DEBUG countme: no event for extras: window already counted
+2023-02-08T18:56:26+0000 DEBUG reviving: 'extras' can be revived - repomd matches.
+2023-02-08T18:56:26+0000 DEBUG extras: using metadata from Mon 30 Jan 2023 08:59:05 AM UTC.
+2023-02-08T18:56:27+0000 DEBUG reviving: 'droplet-agent' can be revived - repomd matches.
+2023-02-08T18:56:27+0000 DEBUG droplet-agent: using metadata from Tue 25 Oct 2022 06:20:59 PM UTC.
+2023-02-08T18:56:27+0000 DEBUG countme: no event for epel: window already counted
+2023-02-08T18:56:27+0000 DEBUG reviving: 'epel' can be revived - metalink checksums match.
+2023-02-08T18:56:27+0000 DEBUG epel: using metadata from Wed 08 Feb 2023 01:57:58 AM UTC.
+2023-02-08T18:56:27+0000 DEBUG User-Agent: constructed: 'libdnf (Rocky Linux 8.7; generic; Linux.x86_64)'
+2023-02-08T18:56:28+0000 DDEBUG timer: sack setup: 3588 ms
+2023-02-08T18:56:28+0000 INFO Metadata cache created.
+2023-02-08T18:56:28+0000 DDEBUG Cleaning up.
+2023-02-08T20:39:24+0000 INFO --- logging initialized ---
+2023-02-08T20:39:24+0000 DDEBUG timer: config: 5 ms
+2023-02-08T20:39:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-08T20:39:24+0000 DEBUG DNF version: 4.7.0
+2023-02-08T20:39:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-08T20:39:24+0000 DDEBUG Installroot: /
+2023-02-08T20:39:24+0000 DDEBUG Releasever: 8
+2023-02-08T20:39:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-08T20:39:24+0000 DDEBUG Base command: makecache
+2023-02-08T20:39:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-08T20:39:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-08T20:39:24+0000 INFO Metadata cache refreshed recently.
+2023-02-08T20:39:24+0000 DDEBUG Cleaning up.
+2023-02-08T22:11:54+0000 INFO --- logging initialized ---
+2023-02-08T22:11:54+0000 DDEBUG timer: config: 6 ms
+2023-02-08T22:11:54+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-08T22:11:54+0000 DEBUG DNF version: 4.7.0
+2023-02-08T22:11:54+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-08T22:11:54+0000 DDEBUG Installroot: /
+2023-02-08T22:11:54+0000 DDEBUG Releasever: 8
+2023-02-08T22:11:54+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-08T22:11:54+0000 DDEBUG Base command: makecache
+2023-02-08T22:11:54+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-08T22:11:54+0000 DEBUG Making cache files for all metadata files.
+2023-02-08T22:11:54+0000 DEBUG appstream: has expired and will be refreshed.
+2023-02-08T22:11:54+0000 DEBUG baseos: has expired and will be refreshed.
+2023-02-08T22:11:54+0000 DEBUG extras: has expired and will be refreshed.
+2023-02-08T22:11:54+0000 DEBUG droplet-agent: has expired and will be refreshed.
+2023-02-08T22:11:54+0000 DEBUG epel: has expired and will be refreshed.
+2023-02-08T22:11:54+0000 DEBUG countme: no event for appstream: window already counted
+2023-02-08T22:11:55+0000 DEBUG reviving: 'appstream' can be revived - repomd matches.
+2023-02-08T22:11:55+0000 DEBUG appstream: using metadata from Tue 07 Feb 2023 05:24:12 PM UTC.
+2023-02-08T22:11:55+0000 DEBUG countme: no event for baseos: window already counted
+2023-02-08T22:11:55+0000 DEBUG reviving: failed for 'baseos', mismatched repomd.
+2023-02-08T22:11:55+0000 DEBUG repo: downloading from remote: baseos
+2023-02-08T22:11:55+0000 DEBUG countme: no event for baseos: window already counted
+2023-02-08T22:11:58+0000 DEBUG baseos: using metadata from Wed 08 Feb 2023 07:27:32 PM UTC.
+2023-02-08T22:11:58+0000 DEBUG countme: no event for extras: window already counted
+2023-02-08T22:11:59+0000 DEBUG reviving: 'extras' can be revived - repomd matches.
+2023-02-08T22:11:59+0000 DEBUG extras: using metadata from Mon 30 Jan 2023 08:59:05 AM UTC.
+2023-02-08T22:11:59+0000 DEBUG reviving: 'droplet-agent' can be revived - repomd matches.
+2023-02-08T22:11:59+0000 DEBUG droplet-agent: using metadata from Tue 25 Oct 2022 06:20:59 PM UTC.
+2023-02-08T22:11:59+0000 DEBUG countme: no event for epel: window already counted
+2023-02-08T22:11:59+0000 DEBUG reviving: 'epel' can be revived - metalink checksums match.
+2023-02-08T22:12:00+0000 DEBUG epel: using metadata from Wed 08 Feb 2023 01:57:58 AM UTC.
+2023-02-08T22:12:00+0000 DEBUG User-Agent: constructed: 'libdnf (Rocky Linux 8.7; generic; Linux.x86_64)'
+2023-02-08T22:12:00+0000 DDEBUG timer: sack setup: 6154 ms
+2023-02-08T22:12:00+0000 DEBUG Completion plugin: Generating completion cache...
+2023-02-08T22:12:01+0000 INFO Metadata cache created.
+2023-02-08T22:12:01+0000 DDEBUG Cleaning up.
+2023-02-09T00:07:04+0000 INFO --- logging initialized ---
+2023-02-09T00:07:04+0000 DDEBUG timer: config: 6 ms
+2023-02-09T00:07:04+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T00:07:04+0000 DEBUG DNF version: 4.7.0
+2023-02-09T00:07:04+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T00:07:04+0000 DDEBUG Installroot: /
+2023-02-09T00:07:04+0000 DDEBUG Releasever: 8
+2023-02-09T00:07:04+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T00:07:04+0000 DDEBUG Base command: makecache
+2023-02-09T00:07:04+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T00:07:04+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T00:07:04+0000 INFO Metadata cache refreshed recently.
+2023-02-09T00:07:04+0000 DDEBUG Cleaning up.
+2023-02-09T01:57:48+0000 INFO --- logging initialized ---
+2023-02-09T01:57:48+0000 DDEBUG timer: config: 6 ms
+2023-02-09T01:57:48+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T01:57:48+0000 DEBUG DNF version: 4.7.0
+2023-02-09T01:57:48+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T01:57:48+0000 DDEBUG Installroot: /
+2023-02-09T01:57:48+0000 DDEBUG Releasever: 8
+2023-02-09T01:57:48+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T01:57:48+0000 DDEBUG Base command: makecache
+2023-02-09T01:57:48+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T01:57:48+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T01:57:48+0000 DEBUG appstream: has expired and will be refreshed.
+2023-02-09T01:57:48+0000 DEBUG baseos: has expired and will be refreshed.
+2023-02-09T01:57:48+0000 DEBUG extras: has expired and will be refreshed.
+2023-02-09T01:57:48+0000 DEBUG droplet-agent: has expired and will be refreshed.
+2023-02-09T01:57:48+0000 DEBUG epel: has expired and will be refreshed.
+2023-02-09T01:57:48+0000 DEBUG countme: no event for appstream: window already counted
+2023-02-09T01:57:48+0000 DEBUG reviving: failed for 'appstream', mismatched repomd.
+2023-02-09T01:57:48+0000 DEBUG repo: downloading from remote: appstream
+2023-02-09T01:57:48+0000 DEBUG countme: no event for appstream: window already counted
+2023-02-09T01:57:53+0000 DEBUG appstream: using metadata from Wed 08 Feb 2023 07:27:27 PM UTC.
+2023-02-09T01:57:53+0000 DEBUG countme: no event for baseos: window already counted
+2023-02-09T01:57:55+0000 DEBUG reviving: 'baseos' can be revived - repomd matches.
+2023-02-09T01:57:55+0000 DEBUG baseos: using metadata from Wed 08 Feb 2023 07:27:32 PM UTC.
+2023-02-09T01:57:55+0000 DEBUG countme: no event for extras: window already counted
+2023-02-09T01:57:55+0000 DEBUG reviving: failed for 'extras', mismatched repomd.
+2023-02-09T01:57:55+0000 DEBUG repo: downloading from remote: extras
+2023-02-09T01:57:55+0000 DEBUG countme: no event for extras: window already counted
+2023-02-09T01:57:58+0000 DEBUG extras: using metadata from Wed 08 Feb 2023 06:45:32 PM UTC.
+2023-02-09T01:57:58+0000 DEBUG reviving: 'droplet-agent' can be revived - repomd matches.
+2023-02-09T01:57:58+0000 DEBUG droplet-agent: using metadata from Tue 25 Oct 2022 06:20:59 PM UTC.
+2023-02-09T01:57:58+0000 DEBUG countme: no event for epel: window already counted
+2023-02-09T01:57:58+0000 DEBUG reviving: failed for 'epel', mismatched sha256 sum.
+2023-02-09T01:57:58+0000 DEBUG repo: downloading from remote: epel
+2023-02-09T01:57:58+0000 DEBUG countme: no event for epel: window already counted
+2023-02-09T01:57:59+0000 DEBUG epel: using metadata from Wed 08 Feb 2023 01:57:58 AM UTC.
+2023-02-09T01:57:59+0000 DEBUG User-Agent: constructed: 'libdnf (Rocky Linux 8.7; generic; Linux.x86_64)'
+2023-02-09T01:58:00+0000 DDEBUG timer: sack setup: 12016 ms
+2023-02-09T01:58:00+0000 DEBUG Completion plugin: Generating completion cache...
+2023-02-09T01:58:00+0000 INFO Metadata cache created.
+2023-02-09T01:58:00+0000 DDEBUG Cleaning up.
+2023-02-09T03:41:24+0000 INFO --- logging initialized ---
+2023-02-09T03:41:24+0000 DDEBUG timer: config: 5 ms
+2023-02-09T03:41:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T03:41:24+0000 DEBUG DNF version: 4.7.0
+2023-02-09T03:41:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T03:41:24+0000 DDEBUG Installroot: /
+2023-02-09T03:41:24+0000 DDEBUG Releasever: 8
+2023-02-09T03:41:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T03:41:24+0000 DDEBUG Base command: makecache
+2023-02-09T03:41:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T03:41:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T03:41:24+0000 INFO Metadata cache refreshed recently.
+2023-02-09T03:41:24+0000 DDEBUG Cleaning up.
+2023-02-09T05:03:07+0000 INFO --- logging initialized ---
+2023-02-09T05:03:07+0000 DDEBUG timer: config: 6 ms
+2023-02-09T05:03:07+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T05:03:07+0000 DEBUG DNF version: 4.7.0
+2023-02-09T05:03:07+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T05:03:07+0000 DDEBUG Installroot: /
+2023-02-09T05:03:07+0000 DDEBUG Releasever: 8
+2023-02-09T05:03:07+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T05:03:07+0000 DDEBUG Base command: makecache
+2023-02-09T05:03:07+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T05:03:07+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T05:03:07+0000 DEBUG appstream: has expired and will be refreshed.
+2023-02-09T05:03:07+0000 DEBUG baseos: has expired and will be refreshed.
+2023-02-09T05:03:07+0000 DEBUG extras: has expired and will be refreshed.
+2023-02-09T05:03:07+0000 DEBUG droplet-agent: has expired and will be refreshed.
+2023-02-09T05:03:07+0000 DEBUG epel: has expired and will be refreshed.
+2023-02-09T05:03:07+0000 DEBUG countme: no event for appstream: window already counted
+2023-02-09T05:03:37+0000 DEBUG error: Curl error (28): Timeout was reached for https://dal1-repo-mirror001.vultr.shrug.pw/rocky/8.7/AppStream/x86_64/os/repodata/repomd.xml [Connection timed out after 30000 milliseconds] (https://dal1-repo-mirror001.vultr.shrug.pw/rocky/8.7/AppStream/x86_64/os/repodata/repomd.xml).
+2023-02-09T05:03:37+0000 WARNING Errors during downloading metadata for repository 'appstream':
+  - Curl error (28): Timeout was reached for https://dal1-repo-mirror001.vultr.shrug.pw/rocky/8.7/AppStream/x86_64/os/repodata/repomd.xml [Connection timed out after 30000 milliseconds]
+2023-02-09T05:03:37+0000 DDEBUG Cleaning up.
+2023-02-09T05:03:37+0000 SUBDEBUG 
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/dnf/repo.py", line 573, in load
+    ret = self._repo.load()
+  File "/usr/lib64/python3.6/site-packages/libdnf/repo.py", line 397, in load
+    return _repo.Repo_load(self)
+libdnf._error.Error: Failed to download metadata for repo 'appstream': Cannot download repomd.xml: Curl error (28): Timeout was reached for https://dal1-repo-mirror001.vultr.shrug.pw/rocky/8.7/AppStream/x86_64/os/repodata/repomd.xml [Connection timed out after 30000 milliseconds]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/dnf/cli/main.py", line 67, in main
+    return _main(base, args, cli_class, option_parser_class)
+  File "/usr/lib/python3.6/site-packages/dnf/cli/main.py", line 106, in _main
+    return cli_run(cli, base)
+  File "/usr/lib/python3.6/site-packages/dnf/cli/main.py", line 122, in cli_run
+    cli.run()
+  File "/usr/lib/python3.6/site-packages/dnf/cli/cli.py", line 1055, in run
+    return self.command.run()
+  File "/usr/lib/python3.6/site-packages/dnf/cli/commands/makecache.py", line 50, in run
+    return self.base.update_cache(timer)
+  File "/usr/lib/python3.6/site-packages/dnf/base.py", line 371, in update_cache
+    self.fill_sack(load_system_repo=False, load_available_repos=True)  # performs the md sync
+  File "/usr/lib/python3.6/site-packages/dnf/base.py", line 400, in fill_sack
+    self._add_repo_to_sack(r)
+  File "/usr/lib/python3.6/site-packages/dnf/base.py", line 140, in _add_repo_to_sack
+    repo.load()
+  File "/usr/lib/python3.6/site-packages/dnf/repo.py", line 580, in load
+    raise dnf.exceptions.RepoError(str(e))
+dnf.exceptions.RepoError: Failed to download metadata for repo 'appstream': Cannot download repomd.xml: Curl error (28): Timeout was reached for https://dal1-repo-mirror001.vultr.shrug.pw/rocky/8.7/AppStream/x86_64/os/repodata/repomd.xml [Connection timed out after 30000 milliseconds]
+2023-02-09T05:03:37+0000 CRITICAL Error: Failed to download metadata for repo 'appstream': Cannot download repomd.xml: Curl error (28): Timeout was reached for https://dal1-repo-mirror001.vultr.shrug.pw/rocky/8.7/AppStream/x86_64/os/repodata/repomd.xml [Connection timed out after 30000 milliseconds]
+2023-02-09T06:42:24+0000 INFO --- logging initialized ---
+2023-02-09T06:42:24+0000 DDEBUG timer: config: 6 ms
+2023-02-09T06:42:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T06:42:24+0000 DEBUG DNF version: 4.7.0
+2023-02-09T06:42:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T06:42:24+0000 DDEBUG Installroot: /
+2023-02-09T06:42:24+0000 DDEBUG Releasever: 8
+2023-02-09T06:42:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T06:42:24+0000 DDEBUG Base command: makecache
+2023-02-09T06:42:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T06:42:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T06:42:24+0000 INFO Metadata cache refreshed recently.
+2023-02-09T06:42:24+0000 DDEBUG Cleaning up.
+2023-02-09T08:17:24+0000 INFO --- logging initialized ---
+2023-02-09T08:17:24+0000 DDEBUG timer: config: 4 ms
+2023-02-09T08:17:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T08:17:24+0000 DEBUG DNF version: 4.7.0
+2023-02-09T08:17:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T08:17:24+0000 DDEBUG Installroot: /
+2023-02-09T08:17:24+0000 DDEBUG Releasever: 8
+2023-02-09T08:17:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T08:17:24+0000 DDEBUG Base command: makecache
+2023-02-09T08:17:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T08:17:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T08:17:24+0000 DEBUG appstream: has expired and will be refreshed.
+2023-02-09T08:17:24+0000 DEBUG baseos: has expired and will be refreshed.
+2023-02-09T08:17:24+0000 DEBUG extras: has expired and will be refreshed.
+2023-02-09T08:17:24+0000 DEBUG droplet-agent: has expired and will be refreshed.
+2023-02-09T08:17:24+0000 DEBUG epel: has expired and will be refreshed.
+2023-02-09T08:17:24+0000 DEBUG countme: no event for appstream: window already counted
+2023-02-09T08:17:25+0000 DEBUG reviving: 'appstream' can be revived - repomd matches.
+2023-02-09T08:17:25+0000 DEBUG appstream: using metadata from Wed 08 Feb 2023 07:27:27 PM UTC.
+2023-02-09T08:17:25+0000 DEBUG countme: no event for baseos: window already counted
+2023-02-09T08:17:25+0000 DEBUG error: Curl error (56): Failure when receiving data from the peer for http://mirror.atl.genesisadaptive.com/rocky/8.7/BaseOS/x86_64/os/repodata/repomd.xml [Recv failure: Connection reset by peer] (http://mirror.atl.genesisadaptive.com/rocky/8.7/BaseOS/x86_64/os/repodata/repomd.xml).
+2023-02-09T08:17:25+0000 WARNING Errors during downloading metadata for repository 'baseos':
+  - Curl error (56): Failure when receiving data from the peer for http://mirror.atl.genesisadaptive.com/rocky/8.7/BaseOS/x86_64/os/repodata/repomd.xml [Recv failure: Connection reset by peer]
+2023-02-09T08:17:25+0000 DDEBUG Cleaning up.
+2023-02-09T08:17:25+0000 SUBDEBUG 
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/dnf/repo.py", line 573, in load
+    ret = self._repo.load()
+  File "/usr/lib64/python3.6/site-packages/libdnf/repo.py", line 397, in load
+    return _repo.Repo_load(self)
+libdnf._error.Error: Failed to download metadata for repo 'baseos': Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for http://mirror.atl.genesisadaptive.com/rocky/8.7/BaseOS/x86_64/os/repodata/repomd.xml [Recv failure: Connection reset by peer]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/site-packages/dnf/cli/main.py", line 67, in main
+    return _main(base, args, cli_class, option_parser_class)
+  File "/usr/lib/python3.6/site-packages/dnf/cli/main.py", line 106, in _main
+    return cli_run(cli, base)
+  File "/usr/lib/python3.6/site-packages/dnf/cli/main.py", line 122, in cli_run
+    cli.run()
+  File "/usr/lib/python3.6/site-packages/dnf/cli/cli.py", line 1055, in run
+    return self.command.run()
+  File "/usr/lib/python3.6/site-packages/dnf/cli/commands/makecache.py", line 50, in run
+    return self.base.update_cache(timer)
+  File "/usr/lib/python3.6/site-packages/dnf/base.py", line 371, in update_cache
+    self.fill_sack(load_system_repo=False, load_available_repos=True)  # performs the md sync
+  File "/usr/lib/python3.6/site-packages/dnf/base.py", line 400, in fill_sack
+    self._add_repo_to_sack(r)
+  File "/usr/lib/python3.6/site-packages/dnf/base.py", line 140, in _add_repo_to_sack
+    repo.load()
+  File "/usr/lib/python3.6/site-packages/dnf/repo.py", line 580, in load
+    raise dnf.exceptions.RepoError(str(e))
+dnf.exceptions.RepoError: Failed to download metadata for repo 'baseos': Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for http://mirror.atl.genesisadaptive.com/rocky/8.7/BaseOS/x86_64/os/repodata/repomd.xml [Recv failure: Connection reset by peer]
+2023-02-09T08:17:25+0000 CRITICAL Error: Failed to download metadata for repo 'baseos': Cannot download repomd.xml: Curl error (56): Failure when receiving data from the peer for http://mirror.atl.genesisadaptive.com/rocky/8.7/BaseOS/x86_64/os/repodata/repomd.xml [Recv failure: Connection reset by peer]
+2023-02-09T09:27:11+0000 INFO --- logging initialized ---
+2023-02-09T09:27:11+0000 DDEBUG timer: config: 4 ms
+2023-02-09T09:27:11+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T09:27:11+0000 DEBUG DNF version: 4.7.0
+2023-02-09T09:27:11+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T09:27:11+0000 DDEBUG Installroot: /
+2023-02-09T09:27:11+0000 DDEBUG Releasever: 8
+2023-02-09T09:27:11+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T09:27:11+0000 DDEBUG Base command: makecache
+2023-02-09T09:27:11+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T09:27:11+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T09:27:11+0000 INFO Metadata cache refreshed recently.
+2023-02-09T09:27:11+0000 DDEBUG Cleaning up.
+2023-02-09T10:41:24+0000 INFO --- logging initialized ---
+2023-02-09T10:41:24+0000 DDEBUG timer: config: 4 ms
+2023-02-09T10:41:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T10:41:24+0000 DEBUG DNF version: 4.7.0
+2023-02-09T10:41:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T10:41:24+0000 DDEBUG Installroot: /
+2023-02-09T10:41:24+0000 DDEBUG Releasever: 8
+2023-02-09T10:41:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T10:41:24+0000 DDEBUG Base command: makecache
+2023-02-09T10:41:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T10:41:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T10:41:24+0000 INFO Metadata cache refreshed recently.
+2023-02-09T10:41:24+0000 DDEBUG Cleaning up.
+2023-02-09T11:43:24+0000 INFO --- logging initialized ---
+2023-02-09T11:43:24+0000 DDEBUG timer: config: 4 ms
+2023-02-09T11:43:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T11:43:24+0000 DEBUG DNF version: 4.7.0
+2023-02-09T11:43:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T11:43:24+0000 DDEBUG Installroot: /
+2023-02-09T11:43:24+0000 DDEBUG Releasever: 8
+2023-02-09T11:43:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T11:43:24+0000 DDEBUG Base command: makecache
+2023-02-09T11:43:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T11:43:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T11:43:24+0000 DEBUG appstream: has expired and will be refreshed.
+2023-02-09T11:43:24+0000 DEBUG baseos: has expired and will be refreshed.
+2023-02-09T11:43:24+0000 DEBUG extras: has expired and will be refreshed.
+2023-02-09T11:43:24+0000 DEBUG droplet-agent: has expired and will be refreshed.
+2023-02-09T11:43:24+0000 DEBUG epel: has expired and will be refreshed.
+2023-02-09T11:43:24+0000 DEBUG countme: no event for appstream: window already counted
+2023-02-09T11:43:25+0000 DEBUG reviving: 'appstream' can be revived - repomd matches.
+2023-02-09T11:43:25+0000 DEBUG appstream: using metadata from Wed 08 Feb 2023 07:27:27 PM UTC.
+2023-02-09T11:43:25+0000 DEBUG countme: no event for baseos: window already counted
+2023-02-09T11:43:25+0000 DEBUG reviving: 'baseos' can be revived - repomd matches.
+2023-02-09T11:43:25+0000 DEBUG baseos: using metadata from Wed 08 Feb 2023 07:27:32 PM UTC.
+2023-02-09T11:43:25+0000 DEBUG countme: no event for extras: window already counted
+2023-02-09T11:43:26+0000 DEBUG reviving: failed for 'extras', mismatched repomd.
+2023-02-09T11:43:26+0000 DEBUG repo: downloading from remote: extras
+2023-02-09T11:43:26+0000 DEBUG countme: no event for extras: window already counted
+2023-02-09T11:43:27+0000 DEBUG extras: using metadata from Wed 08 Feb 2023 06:45:32 PM UTC.
+2023-02-09T11:43:27+0000 DEBUG reviving: 'droplet-agent' can be revived - repomd matches.
+2023-02-09T11:43:27+0000 DEBUG droplet-agent: using metadata from Tue 25 Oct 2022 06:20:59 PM UTC.
+2023-02-09T11:43:27+0000 DEBUG countme: no event for epel: window already counted
+2023-02-09T11:43:27+0000 DEBUG reviving: failed for 'epel', mismatched sha256 sum.
+2023-02-09T11:43:27+0000 DEBUG repo: downloading from remote: epel
+2023-02-09T11:43:27+0000 DEBUG countme: no event for epel: window already counted
+2023-02-09T11:43:35+0000 DEBUG epel: using metadata from Thu 09 Feb 2023 12:48:25 AM UTC.
+2023-02-09T11:43:35+0000 DEBUG User-Agent: constructed: 'libdnf (Rocky Linux 8.7; generic; Linux.x86_64)'
+2023-02-09T11:43:36+0000 DDEBUG timer: sack setup: 12106 ms
+2023-02-09T11:43:36+0000 DEBUG Completion plugin: Generating completion cache...
+2023-02-09T11:43:37+0000 INFO Metadata cache created.
+2023-02-09T11:43:37+0000 DDEBUG Cleaning up.
+2023-02-09T13:02:24+0000 INFO --- logging initialized ---
+2023-02-09T13:02:24+0000 DDEBUG timer: config: 7 ms
+2023-02-09T13:02:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T13:02:24+0000 DEBUG DNF version: 4.7.0
+2023-02-09T13:02:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T13:02:24+0000 DDEBUG Installroot: /
+2023-02-09T13:02:24+0000 DDEBUG Releasever: 8
+2023-02-09T13:02:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T13:02:24+0000 DDEBUG Base command: makecache
+2023-02-09T13:02:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T13:02:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T13:02:24+0000 INFO Metadata cache refreshed recently.
+2023-02-09T13:02:24+0000 DDEBUG Cleaning up.
+2023-02-09T14:43:51+0000 INFO --- logging initialized ---
+2023-02-09T14:43:51+0000 DDEBUG timer: config: 5 ms
+2023-02-09T14:43:51+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T14:43:51+0000 DEBUG DNF version: 4.7.0
+2023-02-09T14:43:51+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T14:43:51+0000 DDEBUG Installroot: /
+2023-02-09T14:43:51+0000 DDEBUG Releasever: 8
+2023-02-09T14:43:51+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T14:43:51+0000 DDEBUG Base command: makecache
+2023-02-09T14:43:51+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T14:43:51+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T14:43:51+0000 DEBUG appstream: has expired and will be refreshed.
+2023-02-09T14:43:51+0000 DEBUG baseos: has expired and will be refreshed.
+2023-02-09T14:43:51+0000 DEBUG extras: has expired and will be refreshed.
+2023-02-09T14:43:51+0000 DEBUG droplet-agent: has expired and will be refreshed.
+2023-02-09T14:43:51+0000 DEBUG epel: has expired and will be refreshed.
+2023-02-09T14:43:51+0000 DEBUG countme: no event for appstream: window already counted
+2023-02-09T14:43:51+0000 DEBUG reviving: 'appstream' can be revived - repomd matches.
+2023-02-09T14:43:51+0000 DEBUG appstream: using metadata from Wed 08 Feb 2023 07:27:27 PM UTC.
+2023-02-09T14:43:51+0000 DEBUG countme: no event for baseos: window already counted
+2023-02-09T14:43:52+0000 DEBUG reviving: 'baseos' can be revived - repomd matches.
+2023-02-09T14:43:52+0000 DEBUG baseos: using metadata from Wed 08 Feb 2023 07:27:32 PM UTC.
+2023-02-09T14:43:52+0000 DEBUG countme: no event for extras: window already counted
+2023-02-09T14:43:52+0000 DEBUG reviving: 'extras' can be revived - repomd matches.
+2023-02-09T14:43:52+0000 DEBUG extras: using metadata from Wed 08 Feb 2023 06:45:32 PM UTC.
+2023-02-09T14:43:52+0000 DEBUG reviving: 'droplet-agent' can be revived - repomd matches.
+2023-02-09T14:43:52+0000 DEBUG droplet-agent: using metadata from Tue 25 Oct 2022 06:20:59 PM UTC.
+2023-02-09T14:43:52+0000 DEBUG countme: no event for epel: window already counted
+2023-02-09T14:43:53+0000 DEBUG reviving: 'epel' can be revived - metalink checksums match.
+2023-02-09T14:43:53+0000 DEBUG epel: using metadata from Thu 09 Feb 2023 12:48:25 AM UTC.
+2023-02-09T14:43:53+0000 DEBUG User-Agent: constructed: 'libdnf (Rocky Linux 8.7; generic; Linux.x86_64)'
+2023-02-09T14:43:53+0000 DDEBUG timer: sack setup: 2316 ms
+2023-02-09T14:43:53+0000 INFO Metadata cache created.
+2023-02-09T14:43:53+0000 DDEBUG Cleaning up.
+2023-02-09T15:59:24+0000 INFO --- logging initialized ---
+2023-02-09T15:59:24+0000 DDEBUG timer: config: 4 ms
+2023-02-09T15:59:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T15:59:24+0000 DEBUG DNF version: 4.7.0
+2023-02-09T15:59:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T15:59:24+0000 DDEBUG Installroot: /
+2023-02-09T15:59:24+0000 DDEBUG Releasever: 8
+2023-02-09T15:59:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T15:59:24+0000 DDEBUG Base command: makecache
+2023-02-09T15:59:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T15:59:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T15:59:24+0000 INFO Metadata cache refreshed recently.
+2023-02-09T15:59:24+0000 DDEBUG Cleaning up.
+2023-02-09T17:40:24+0000 INFO --- logging initialized ---
+2023-02-09T17:40:24+0000 DDEBUG timer: config: 5 ms
+2023-02-09T17:40:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T17:40:24+0000 DEBUG DNF version: 4.7.0
+2023-02-09T17:40:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T17:40:24+0000 DDEBUG Installroot: /
+2023-02-09T17:40:24+0000 DDEBUG Releasever: 8
+2023-02-09T17:40:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T17:40:24+0000 DDEBUG Base command: makecache
+2023-02-09T17:40:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T17:40:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T17:40:24+0000 INFO Metadata cache refreshed recently.
+2023-02-09T17:40:24+0000 DDEBUG Cleaning up.
+2023-02-09T19:32:13+0000 INFO --- logging initialized ---
+2023-02-09T19:32:13+0000 DDEBUG timer: config: 4 ms
+2023-02-09T19:32:13+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T19:32:13+0000 DEBUG DNF version: 4.7.0
+2023-02-09T19:32:13+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T19:32:13+0000 DDEBUG Installroot: /
+2023-02-09T19:32:13+0000 DDEBUG Releasever: 8
+2023-02-09T19:32:13+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T19:32:13+0000 DDEBUG Base command: makecache
+2023-02-09T19:32:13+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T19:32:13+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T19:32:13+0000 DEBUG appstream: has expired and will be refreshed.
+2023-02-09T19:32:13+0000 DEBUG baseos: has expired and will be refreshed.
+2023-02-09T19:32:13+0000 DEBUG extras: has expired and will be refreshed.
+2023-02-09T19:32:13+0000 DEBUG droplet-agent: has expired and will be refreshed.
+2023-02-09T19:32:13+0000 DEBUG epel: has expired and will be refreshed.
+2023-02-09T19:32:13+0000 DEBUG countme: no event for appstream: window already counted
+2023-02-09T19:32:14+0000 DEBUG reviving: 'appstream' can be revived - repomd matches.
+2023-02-09T19:32:14+0000 DEBUG appstream: using metadata from Wed 08 Feb 2023 07:27:27 PM UTC.
+2023-02-09T19:32:14+0000 DEBUG countme: no event for baseos: window already counted
+2023-02-09T19:32:15+0000 DEBUG reviving: 'baseos' can be revived - repomd matches.
+2023-02-09T19:32:15+0000 DEBUG baseos: using metadata from Wed 08 Feb 2023 07:27:32 PM UTC.
+2023-02-09T19:32:15+0000 DEBUG countme: no event for extras: window already counted
+2023-02-09T19:32:15+0000 DEBUG reviving: 'extras' can be revived - repomd matches.
+2023-02-09T19:32:15+0000 DEBUG extras: using metadata from Wed 08 Feb 2023 06:45:32 PM UTC.
+2023-02-09T19:32:15+0000 DEBUG reviving: 'droplet-agent' can be revived - repomd matches.
+2023-02-09T19:32:15+0000 DEBUG droplet-agent: using metadata from Tue 25 Oct 2022 06:20:59 PM UTC.
+2023-02-09T19:32:15+0000 DEBUG countme: no event for epel: window already counted
+2023-02-09T19:32:15+0000 DEBUG reviving: 'epel' can be revived - metalink checksums match.
+2023-02-09T19:32:16+0000 DEBUG epel: using metadata from Thu 09 Feb 2023 12:48:25 AM UTC.
+2023-02-09T19:32:16+0000 DEBUG User-Agent: constructed: 'libdnf (Rocky Linux 8.7; generic; Linux.x86_64)'
+2023-02-09T19:32:16+0000 DDEBUG timer: sack setup: 3222 ms
+2023-02-09T19:32:16+0000 INFO Metadata cache created.
+2023-02-09T19:32:16+0000 DDEBUG Cleaning up.
+2023-02-09T20:53:24+0000 INFO --- logging initialized ---
+2023-02-09T20:53:24+0000 DDEBUG timer: config: 5 ms
+2023-02-09T20:53:24+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T20:53:24+0000 DEBUG DNF version: 4.7.0
+2023-02-09T20:53:24+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T20:53:24+0000 DDEBUG Installroot: /
+2023-02-09T20:53:24+0000 DDEBUG Releasever: 8
+2023-02-09T20:53:24+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T20:53:24+0000 DDEBUG Base command: makecache
+2023-02-09T20:53:24+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T20:53:24+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T20:53:24+0000 INFO Metadata cache refreshed recently.
+2023-02-09T20:53:24+0000 DDEBUG Cleaning up.
+2023-02-09T22:31:59+0000 INFO --- logging initialized ---
+2023-02-09T22:31:59+0000 DDEBUG timer: config: 5 ms
+2023-02-09T22:31:59+0000 DEBUG Loaded plugins: builddep, changelog, config-manager, copr, debug, debuginfo-install, download, generate_completion_cache, groups-manager, needs-restarting, playground, repoclosure, repodiff, repograph, repomanage, reposync
+2023-02-09T22:31:59+0000 DEBUG DNF version: 4.7.0
+2023-02-09T22:31:59+0000 DDEBUG Command: dnf makecache --timer 
+2023-02-09T22:31:59+0000 DDEBUG Installroot: /
+2023-02-09T22:31:59+0000 DDEBUG Releasever: 8
+2023-02-09T22:31:59+0000 DEBUG cachedir: /var/cache/dnf
+2023-02-09T22:31:59+0000 DDEBUG Base command: makecache
+2023-02-09T22:31:59+0000 DDEBUG Extra commands: ['makecache', '--timer']
+2023-02-09T22:31:59+0000 DEBUG Making cache files for all metadata files.
+2023-02-09T22:31:59+0000 INFO Metadata cache refreshed recently.
+2023-02-09T22:31:59+0000 DDEBUG Cleaning up.
